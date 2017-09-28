@@ -1,0 +1,6 @@
+Car will follow a straight path (at 0.0) for first 15 seconds
+Then random numbers are generated between 0~1 and set as the new path for remaining 15 seconds
+
+The system showed alert message for steer_sat, but control was alive
+
+

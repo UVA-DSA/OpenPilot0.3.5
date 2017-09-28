@@ -1,0 +1,5 @@
+Path is set 255.0 for first 5.0s
+Vision Data unavailable after 5.0s
+
+Comma showed steer_sat alert for first 5s, then worked as usual
+No warning for vision data unavailability

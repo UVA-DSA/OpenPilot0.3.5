@@ -1,0 +1,6441 @@
+Script started on Mon 18 Sep 2017 07:14:23 PM EDT
+]0;uva-dsa@uvadsa0: ~/Development/openpilot_dev/openpilot0.3.5[01;32muva-dsa@uvadsa0[00m:[01;34m~/Development/openpilot_dev/openpilot0.3.5[00m$ exit./run_docker_tests.shh 
+Sending build context to Docker daemon  557.1kBSending build context to Docker daemon  17.83MBSending build context to Docker daemon  44.01MBSending build context to Docker daemon  69.63MBSending build context to Docker daemon  96.93MBSending build context to Docker daemon  120.3MBSending build context to Docker daemon  142.7MB
+Step 1/8 : FROM ubuntu:16.04
+ ---> ccc7a11d65b1
+Step 2/8 : ENV PYTHONUNBUFFERED 1
+ ---> Using cache
+ ---> a864e15de138
+Step 3/8 : RUN apt-get update && apt-get install -y build-essential clang vim screen wget bzip2 git libglib2.0-0 python-pip capnproto libcapnp-dev libzmq5-dev libffi-dev
+ ---> Using cache
+ ---> 27cc28def860
+Step 4/8 : RUN pip install numpy==1.11.2 scipy==0.18.1 matplotlib
+ ---> Using cache
+ ---> b2b7beeb0b16
+Step 5/8 : COPY requirements_openpilot.txt /tmp/
+ ---> Using cache
+ ---> f0b12764aa96
+Step 6/8 : RUN pip install -r /tmp/requirements_openpilot.txt
+ ---> Using cache
+ ---> 80080e0b62ae
+Step 7/8 : ENV PYTHONPATH /tmp/openpilot:$PYTHONPATH
+ ---> Using cache
+ ---> 11963e4901e3
+Step 8/8 : COPY . /tmp/openpilot
+ ---> 0cb765ae70fc
+Successfully built 0cb765ae70fc
+Successfully tagged tmppilot:latest
+/tmp/openpilot/selfdrive/controls /tmp/openpilot/selfdrive/test/plant
+/tmp/openpilot/selfdrive/test/plant
+chrt: failed to set pid 9's policy: Operation not permitted
+radard is waiting for CarParams
+chrt: failed to set pid 8's policy: Operation not permitted
+waiting for fingerprint...
+fingerprinted ACURA ILX 2016 ACURAWATCH PLUS
+{'event': 'alert_add', 'alert_type': 'startup', 'enabled': False}
+set CarParams
+5
+======== enabled??
+False
+=================
+Always Keep Hands on Wheel/Be Ready to Take Over Any Time 1  none none
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+BRAKE ERROR
+======== enabled??
+False
+/usr/lib/python2.7/copy.py:88: UserWarning: This message has already been written once. Be very careful that you're not setting Text/Struct/List fields more than once, since that will cause memory leaks (both in memory and in the serialized data). You can disable this warning by setting the `_is_written` field of this object to False after every write.
+  rv = reductor(2)
+radard got CarParams
+radard is importing nidec
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+(pressed = true, type = decelCruise)
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+(pressed = false, type = decelCruise)
+enabled pressed at 1467245.73494
+======== enabled??
+False
+*** enabling controls
+=================
+/ 0  none beepSingle
+CONTROLS ARE LIVE
+======== enabled??
+True
+======== enabled??
+True
+======== enabled??
+True
+======== enabled??
+True
+======== enabled??
+True
+======== enabled??
+True
+======== enabled??
+True
+======== enabled??
+True
+======== enabled??
+True
+======== enabled??
+True
+======== enabled??
+True
+======== enabled??
+True
+======== enabled??
+True
+======== enabled??
+True
+======== enabled??
+True
+======== enabled??
+True
+======== enabled??
+True
+======== enabled??
+True
+1
+======== enabled??
+True
+{'event': 'alert_add', 'alert_type': 'steerUnavailable', 'enabled': True}
+DISABLING IMMEDIATELY ON ALERT
+=================
+Take Control Immediately/Steer Error: Restart the Car 5  steerRequired chimeRepeated
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+1
+======== enabled??
+False
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+======== enabled??
+False
+]0;uva-dsa@uvadsa0: ~/Development/openpilot_dev/openpilot0.3.5[01;32muva-dsa@uvadsa0[00m:[01;34m~/Development/openpilot_dev/openpilot0.3.5[00m$ ./run_docker_tests.shh [A]0;uva-dsa@uvadsa0: ~/Development/openpilot_dev/openpilot0.3.5[01;32muva-dsa@uvadsa0[00m:[01;34m~/Development/openpilot_dev/openpilot0.3.5[00m$ exit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+exit
+
+Script done on Mon 18 Sep 2017 07:17:54 PM EDT

@@ -1,0 +1,6 @@
+A large number (255.0) is set for first 15 seconds
+Then car will follow a straight path (at 0.0) for remaining 15 seconds
+
+The system showed alert message for steer_sat, but control was alive
+
+

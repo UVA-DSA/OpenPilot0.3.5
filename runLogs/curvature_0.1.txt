@@ -1,0 +1,6368 @@
+Script started on Wed 20 Sep 2017 03:50:38 PM EDT
+]0;uva-dsa@uvadsa0: ~/Development/openpilot_dev/openpilot0.3.5[01;32muva-dsa@uvadsa0[00m:[01;34m~/Development/openpilot_dev/openpilot0.3.5[00m$ exit./run_docker_tests.sh 
+Sending build context to Docker daemon  557.1kBSending build context to Docker daemon  23.95MBSending build context to Docker daemon  50.14MBSending build context to Docker daemon  76.32MBSending build context to Docker daemon  102.5MBSending build context to Docker daemon    127MBSending build context to Docker daemon  143.4MB
+Step 1/8 : FROM ubuntu:16.04
+ ---> ccc7a11d65b1
+Step 2/8 : ENV PYTHONUNBUFFERED 1
+ ---> Using cache
+ ---> a864e15de138
+Step 3/8 : RUN apt-get update && apt-get install -y build-essential clang vim screen wget bzip2 git libglib2.0-0 python-pip capnproto libcapnp-dev libzmq5-dev libffi-dev
+ ---> Using cache
+ ---> 27cc28def860
+Step 4/8 : RUN pip install numpy==1.11.2 scipy==0.18.1 matplotlib
+ ---> Using cache
+ ---> b2b7beeb0b16
+Step 5/8 : COPY requirements_openpilot.txt /tmp/
+ ---> Using cache
+ ---> f0b12764aa96
+Step 6/8 : RUN pip install -r /tmp/requirements_openpilot.txt
+ ---> Using cache
+ ---> 80080e0b62ae
+Step 7/8 : ENV PYTHONPATH /tmp/openpilot:$PYTHONPATH
+ ---> Using cache
+ ---> 11963e4901e3
+Step 8/8 : COPY . /tmp/openpilot
+ ---> 7f3da786881b
+Successfully built 7f3da786881b
+Successfully tagged tmppilot:latest
+/tmp/openpilot/selfdrive/controls /tmp/openpilot/selfdrive/test/plant
+/tmp/openpilot/selfdrive/test/plant
+chrt: failed to set pid 8's policy: Operation not permitted
+radard is waiting for CarParams
+chrt: failed to set pid 7's policy: Operation not permitted
+waiting for fingerprint...
+fingerprinted ACURA ILX 2016 ACURAWATCH PLUS
+{'event': 'alert_add', 'alert_type': 'startup', 'enabled': False}
+set CarParams
+5
+======= curvature
+0.0
+=================
+Always Keep Hands on Wheel/Be Ready to Take Over Any Time 1  none none
+STEER ALERT, TORQUE INHIBITED
+STEER ERROR
+BRAKE ERROR
+======= curvature
+0.0
+/usr/lib/python2.7/copy.py:88: UserWarning: This message has already been written once. Be very careful that you're not setting Text/Struct/List fields more than once, since that will cause memory leaks (both in memory and in the serialized data). You can disable this warning by setting the `_is_written` field of this object to False after every write.
+  rv = reductor(2)
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+radard got CarParams
+radard is importing nidec
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+(pressed = true, type = decelCruise)
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+======= curvature
+0.0
+(pressed = false, type = decelCruise)
+enabled pressed at 1627800.75516
+======= curvature
+0.0
+*** enabling controls
+=================
+/ 0  none beepSingle
+CONTROLS ARE LIVE
+======= curvature
+-1.45355539326e-08
+======= curvature
+-1.45355539326e-08
+======= curvature
+-1.45370550354e-08
+======= curvature
+-1.45370550354e-08
+======= curvature
+-1.45355539326e-08
+======= curvature
+-2.90711078653e-08
+======= curvature
+-2.9068105968e-08
+======= curvature
+-2.9068105968e-08
+======= curvature
+-2.9068105968e-08
+======= curvature
+-2.90651064534e-08
+======= curvature
+-4.36007939302e-08
+======= curvature
+-4.36007939302e-08
+======= curvature
+-4.36007939302e-08
+======= curvature
+-4.36007939302e-08
+======= curvature
+-4.36052935256e-08
+======= curvature
+-5.81409143381e-08
+======= curvature
+-5.81409143381e-08
+======= curvature
+-5.81469186182e-08
+======= curvature
+-5.81469186182e-08
+======= curvature
+-5.81529235151e-08
+======= curvature
+-7.26884103982e-08
+======= curvature
+-7.26959170068e-08
+======= curvature
+-7.26959170068e-08
+======= curvature
+-7.27034191979e-08
+======= curvature
+-7.27109273479e-08
+======= curvature
+-8.72462121107e-08
+======= curvature
+-8.72552221031e-08
+======= curvature
+-8.72552221031e-08
+======= curvature
+-8.72642330206e-08
+======= curvature
+-8.72732448631e-08
+======= curvature
+-1.0180832593e-07
+======= curvature
+-1.01818832479e-07
+======= curvature
+-1.01829347373e-07
+======= curvature
+-1.01829347373e-07
+======= curvature
+-1.01839863346e-07
+======= curvature
+-1.16385187538e-07
+======= curvature
+-1.16385187538e-07
+======= curvature
+-1.16397198378e-07
+======= curvature
+-1.16397198378e-07
+======= curvature
+-1.16409218756e-07
+======= curvature
+-1.30955840289e-07
+======= curvature
+-1.30955840289e-07
+======= curvature
+-1.30969364124e-07
+======= curvature
+-1.30982889347e-07
+======= curvature
+-1.30982889347e-07
+======= curvature
+-1.45530797777e-07
+======= curvature
+-1.45530797777e-07
+======= curvature
+-1.45545826739e-07
+======= curvature
+-1.45560857241e-07
+======= curvature
+-1.45560857241e-07
+======= curvature
+-1.60110070119e-07
+======= curvature
+-1.60126593217e-07
+======= curvature
+-1.60126593217e-07
+======= curvature
+-1.60143129436e-07
+======= curvature
+-1.60159667349e-07
+======= curvature
+-1.74693636362e-07
+======= curvature
+-1.74711676885e-07
+======= curvature
+-1.74711676885e-07
+======= curvature
+-1.74729719258e-07
+======= curvature
+-1.74747751008e-07
+======= curvature
+-1.89281506661e-07
+======= curvature
+-1.89301053619e-07
+======= curvature
+-1.89320602579e-07
+======= curvature
+-1.89320602579e-07
+======= curvature
+-1.89340153541e-07
+======= curvature
+-2.03893161758e-07
+======= curvature
+-2.03893161758e-07
+======= curvature
+-2.03914217578e-07
+======= curvature
+-2.03935275554e-07
+======= curvature
+-2.03956335685e-07
+======= curvature
+-2.18510577063e-07
+======= curvature
+-2.18555694301e-07
+======= curvature
+-2.1857826418e-07
+======= curvature
+-2.18600836369e-07
+======= curvature
+-2.18623395265e-07
+======= curvature
+-2.33201216847e-07
+======= curvature
+-2.33225299028e-07
+======= curvature
+-2.3327345413e-07
+======= curvature
+-2.33321635727e-07
+======= curvature
+-2.33345730219e-07
+======= curvature
+-2.47925978503e-07
+======= curvature
+-2.4797718624e-07
+======= curvature
+-2.48028386741e-07
+======= curvature
+-2.48079615401e-07
+======= curvature
+-2.48130836817e-07
+======= curvature
+-2.62713393084e-07
+======= curvature
+-2.62767635704e-07
+======= curvature
+-2.62849048522e-07
+======= curvature
+-2.62903318816e-07
+======= curvature
+-2.62957618943e-07
+======= curvature
+-2.77542360094e-07
+======= curvature
+-2.77599683473e-07
+======= curvature
+-2.77657018538e-07
+======= curvature
+-2.77743023227e-07
+======= curvature
+-2.77800367679e-07
+======= curvature
+-2.92387313383e-07
+======= curvature
+-2.92447701905e-07
+======= curvature
+-2.92538286867e-07
+======= curvature
+-2.92598685245e-07
+======= curvature
+-2.92659116794e-07
+======= curvature
+-3.07248230391e-07
+======= curvature
+-3.07343398474e-07
+======= curvature
+-3.07406852674e-07
+======= curvature
+-3.0747034171e-07
+======= curvature
+-3.07565577512e-07
+======= curvature
+-3.2215676274e-07
+======= curvature
+-3.22223274321e-07
+======= curvature
+-3.2232310151e-07
+======= curvature
+-3.22389646855e-07
+======= curvature
+-3.22489524708e-07
+======= curvature
+-3.3708273675e-07
+======= curvature
+-3.37152352483e-07
+======= curvature
+-3.3725677849e-07
+======= curvature
+-3.37326429516e-07
+======= curvature
+-3.3743090845e-07
+======= curvature
+-3.52026147341e-07
+======= curvature
+-3.52135203229e-07
+======= curvature
+-3.5220790043e-07
+======= curvature
+-3.52317011527e-07
+======= curvature
+-3.52389745521e-07
+======= curvature
+-3.6702331548e-07
+======= curvature
+-3.67099084719e-07
+======= curvature
+-3.67212780401e-07
+======= curvature
+-3.67288614145e-07
+======= curvature
+-3.67402367287e-07
+======= curvature
+-3.82001533782e-07
+======= curvature
+-3.82119842349e-07
+======= curvature
+-3.82238214018e-07
+======= curvature
+-3.82317121102e-07
+======= curvature
+-3.8243552522e-07
+======= curvature
+-3.97036563329e-07
+======= curvature
+-3.97159524613e-07
+======= curvature
+-3.97282551427e-07
+======= curvature
+-3.97364561619e-07
+======= curvature
+-3.97487622064e-07
+======= curvature
+-4.12131453149e-07
+======= curvature
+-4.12216526853e-07
+======= curvature
+-4.12344213642e-07
+======= curvature
+-4.12471909554e-07
+======= curvature
+-4.12557081191e-07
+======= curvature
+-4.27204253272e-07
+======= curvature
+-4.27336548251e-07
+======= curvature
+-4.2742478739e-07
+======= curvature
+-4.27557148844e-07
+======= curvature
+2.15045458201e-05
+======= curvature
+2.1496688611e-05
+======= curvature
+2.15033453622e-05
+======= curvature
+2.15077853322e-05
+======= curvature
+2.15144454228e-05
+======= curvature
+2.15211075165e-05
+======= curvature
+2.15132566257e-05
+======= curvature
+2.15176969619e-05
+======= curvature
+2.15243614369e-05
+======= curvature
+2.15310263785e-05
+======= curvature
+2.15376933214e-05
+======= curvature
+2.15298472394e-05
+======= curvature
+2.15365152266e-05
+======= curvature
+2.15431836776e-05
+======= curvature
+2.15498541282e-05
+======= curvature
+2.15543032311e-05
+======= curvature
+2.15464635211e-05
+======= curvature
+2.15531363473e-05
+======= curvature
+2.15598096342e-05
+======= curvature
+2.15664849188e-05
+======= curvature
+2.15731637396e-05
+======= curvature
+2.15653312085e-05
+======= curvature
+2.15720079927e-05
+======= curvature
+2.15786883118e-05
+======= curvature
+2.15853690878e-05
+======= curvature
+2.15920518594e-05
+======= curvature
+2.15842280792e-05
+======= curvature
+2.15909103496e-05
+======= curvature
+2.15975946137e-05
+======= curvature
+2.16042824123e-05
+======= curvature
+2.16109706639e-05
+======= curvature
+2.16031525861e-05
+======= curvature
+2.16098418741e-05
+======= curvature
+2.1616531613e-05
+======= curvature
+2.16232233435e-05
+======= curvature
+2.16299186079e-05
+======= curvature
+2.16221078051e-05
+======= curvature
+2.16288010192e-05
+======= curvature
+2.16354977658e-05
+======= curvature
+2.16421949595e-05
+======= curvature
+2.16488941425e-05
+======= curvature
+2.16433254518e-05
+======= curvature
+2.16500263302e-05
+======= curvature
+2.16567276527e-05
+======= curvature
+2.16634309625e-05
+======= curvature
+2.16701378046e-05
+======= curvature
+2.16623424382e-05
+======= curvature
+2.16690472205e-05
+======= curvature
+2.16779905337e-05
+======= curvature
+2.16847014945e-05
+======= curvature
+2.16914128944e-05
+======= curvature
+2.1683625694e-05
+======= curvature
+2.16903381219e-05
+======= curvature
+2.16992895649e-05
+======= curvature
+2.17060050738e-05
+======= curvature
+2.17127225653e-05
+======= curvature
+2.17049451166e-05
+======= curvature
+2.17116620865e-05
+======= curvature
+2.17206216439e-05
+======= curvature
+2.17273447845e-05
+======= curvature
+2.1734068357e-05
+======= curvature
+2.17262976005e-05
+======= curvature
+2.17352626192e-05
+======= curvature
+2.17419898541e-05
+======= curvature
+2.17487175177e-05
+======= curvature
+2.17576913298e-05
+======= curvature
+2.174992965e-05
+======= curvature
+2.17566609727e-05
+======= curvature
+2.17656375934e-05
+======= curvature
+2.17723719764e-05
+======= curvature
+2.17791083349e-05
+======= curvature
+2.17736037369e-05
+======= curvature
+2.17803402215e-05
+======= curvature
+2.17870786797e-05
+======= curvature
+2.17960668782e-05
+======= curvature
+2.18028114948e-05
+======= curvature
+2.17950672927e-05
+======= curvature
+2.18040582839e-05
+======= curvature
+2.18108034386e-05
+======= curvature
+2.18175521191e-05
+======= curvature
+2.18265518712e-05
+======= curvature
+2.18188168707e-05
+======= curvature
+2.18255676392e-05
+======= curvature
+2.18345701716e-05
+======= curvature
+2.18413239786e-05
+======= curvature
+2.18480797536e-05
+======= curvature
+2.18426068788e-05
+======= curvature
+2.18493643224e-05
+======= curvature
+2.18583757494e-05
+======= curvature
+2.18651362239e-05
+======= curvature
+2.18718986639e-05
+======= curvature
+2.18664388568e-05
+======= curvature
+2.18732014041e-05
+======= curvature
+2.18799659148e-05
+======= curvature
+2.18889888362e-05
+======= curvature
+2.18957594875e-05
+======= curvature
+2.18903096689e-05
+======= curvature
+2.18970788627e-05
+======= curvature
+2.19038500173e-05
+======= curvature
+2.19128833543e-05
+======= curvature
+2.19196590837e-05
+======= curvature
+2.19142208504e-05
+======= curvature
+2.19209966768e-05
+======= curvature
+2.19277760231e-05
+======= curvature
+2.1936816636e-05
+======= curvature
+2.19435989889e-05
+======= curvature
+2.1938172379e-05
+======= curvature
+2.19449548239e-05
+======= curvature
+2.19517407876e-05
+======= curvature
+2.19607902176e-05
+======= curvature
+2.19675791798e-05
+======= curvature
+2.19621642317e-05
+======= curvature
+2.19689548453e-05
+======= curvature
+2.19780104703e-05
+======= curvature
+2.19848040755e-05
+======= curvature
+2.19915996326e-05
+======= curvature
+2.19861979512e-05
+======= curvature
+2.19929935904e-05
+======= curvature
+2.20020579977e-05
+======= curvature
+2.2008858186e-05
+======= curvature
+2.20179286579e-05
+======= curvature
+2.20102703815e-05
+======= curvature
+2.20170725957e-05
+======= curvature
+2.20261457657e-05
+======= curvature
+2.20329525221e-05
+======= curvature
+2.20420333168e-05
+======= curvature
+2.20343830608e-05
+======= curvature
+2.20434623815e-05
+======= curvature
+2.20502737476e-05
+======= curvature
+2.20593591156e-05
+======= curvature
+2.20661765868e-05
+======= curvature
+2.20608097155e-05
+======= curvature
+2.20676256822e-05
+======= curvature
+2.20744451608e-05
+======= curvature
+2.20835392471e-05
+======= curvature
+2.20903616824e-05
+======= curvature
+2.20850066666e-05
+======= curvature
+2.20918291622e-05
+======= curvature
+2.21009293615e-05
+======= curvature
+2.21077579514e-05
+======= curvature
+2.21168641787e-05
+======= curvature
+2.21092437834e-05
+======= curvature
+2.21183500831e-05
+======= curvature
+2.2125183246e-05
+======= curvature
+2.2134295565e-05
+======= curvature
+2.21411316669e-05
+======= curvature
+2.21358015299e-05
+======= curvature
+2.21426392561e-05
+======= curvature
+2.21494773388e-05
+======= curvature
+2.21585983119e-05
+======= curvature
+2.21654409002e-05
+======= curvature
+2.21601227357e-05
+======= curvature
+2.21669669442e-05
+======= curvature
+2.2176093979e-05
+======= curvature
+2.218294111e-05
+======= curvature
+2.21920741424e-05
+======= curvature
+2.21844855938e-05
+======= curvature
+2.21936186764e-05
+======= curvature
+2.22004703397e-05
+======= curvature
+2.22096094111e-05
+======= curvature
+2.22164655647e-05
+======= curvature
+2.22111741002e-05
+======= curvature
+2.22180302859e-05
+======= curvature
+2.22271753828e-05
+======= curvature
+2.2234036052e-05
+======= curvature
+2.2243187126e-05
+======= curvature
+2.22356192685e-05
+======= curvature
+2.22447703768e-05
+======= curvature
+2.22516355508e-05
+======= curvature
+2.2260792627e-05
+======= curvature
+2.22676638587e-05
+======= curvature
+2.22623960954e-05
+======= curvature
+2.22692657639e-05
+======= curvature
+2.22784288285e-05
+======= curvature
+2.22853029647e-05
+======= curvature
+2.22944735698e-05
+======= curvature
+2.22869250042e-05
+======= curvature
+2.22960940427e-05
+======= curvature
+2.23029726554e-05
+======= curvature
+2.23121476401e-05
+======= curvature
+2.23213276079e-05
+======= curvature
+2.23137899768e-05
+======= curvature
+2.23229683679e-05
+======= curvature
+2.23298539905e-05
+======= curvature
+2.23390383166e-05
+======= curvature
+2.2345929977e-05
+======= curvature
+2.23407009738e-05
+======= curvature
+2.23475910476e-05
+======= curvature
+2.2356781304e-05
+======= curvature
+2.23636774093e-05
+======= curvature
+2.23728735887e-05
+======= curvature
+2.23653571134e-05
+======= curvature
+2.2374553285e-05
+======= curvature
+2.23814522338e-05
+======= curvature
+2.23906559084e-05
+======= curvature
+2.23975592906e-05
+======= curvature
+2.23923559748e-05
+======= curvature
+2.23992593449e-05
+======= curvature
+2.24084673195e-05
+======= curvature
+2.24153767071e-05
+======= curvature
+2.24245905818e-05
+======= curvature
+2.24170954487e-05
+======= curvature
+2.24263092981e-05
+======= curvature
+2.24355265134e-05
+======= curvature
+2.24424428281e-05
+======= curvature
+2.24516659315e-05
+======= curvature
+2.24441819741e-05
+======= curvature
+2.24534050432e-05
+======= curvature
+2.24603257452e-05
+======= curvature
+2.24695546922e-05
+======= curvature
+2.24764782068e-05
+======= curvature
+2.24713142642e-05
+======= curvature
+2.24782377465e-05
+======= curvature
+2.24874741171e-05
+======= curvature
+2.24944019987e-05
+======= curvature
+2.25036426375e-05
+======= curvature
+2.24961803058e-05
+======= curvature
+2.25054208923e-05
+======= curvature
+2.25123547255e-05
+======= curvature
+2.25216011657e-05
+======= curvature
+2.25308509492e-05
+======= curvature
+2.25233999389e-05
+======= curvature
+2.25326496605e-05
+======= curvature
+2.25395903416e-05
+======= curvature
+2.25488459044e-05
+======= curvature
+2.25557893658e-05
+======= curvature
+2.25506651641e-05
+======= curvature
+2.25576101724e-05
+======= curvature
+2.25668714985e-05
+======= curvature
+2.25761361543e-05
+======= curvature
+2.25830864303e-05
+======= curvature
+2.25779759207e-05
+======= curvature
+2.2584927738e-05
+======= curvature
+2.25941981346e-05
+======= curvature
+4.6374947617e-05
+======= curvature
+4.63939813255e-05
+======= curvature
+4.63938836875e-05
+======= curvature
+4.64129234167e-05
+======= curvature
+4.64272101491e-05
+======= curvature
+4.6446261789e-05
+======= curvature
+4.6465320231e-05
+======= curvature
+4.64652458863e-05
+======= curvature
+4.64843103291e-05
+======= curvature
+4.64986155912e-05
+======= curvature
+4.65176919213e-05
+======= curvature
+4.65320027995e-05
+======= curvature
+4.6536724019e-05
+======= curvature
+4.65510426819e-05
+======= curvature
+4.6570136867e-05
+======= curvature
+4.65892378296e-05
+======= curvature
+4.66035671723e-05
+======= curvature
+4.66083178998e-05
+======= curvature
+4.66226550159e-05
+======= curvature
+4.66417737889e-05
+======= curvature
+4.66561164812e-05
+======= curvature
+4.66752470886e-05
+======= curvature
+4.66752412586e-05
+======= curvature
+4.66943811134e-05
+======= curvature
+4.67087371291e-05
+======= curvature
+4.67278854922e-05
+======= curvature
+4.67470406028e-05
+======= curvature
+4.6747058183e-05
+======= curvature
+4.67662225238e-05
+======= curvature
+4.67805968905e-05
+======= curvature
+4.67997697104e-05
+======= curvature
+4.68141529154e-05
+======= curvature
+4.68189902825e-05
+======= curvature
+4.68333812263e-05
+======= curvature
+4.68525717201e-05
+======= curvature
+4.68669681721e-05
+======= curvature
+4.68861704262e-05
+======= curvature
+4.68910373554e-05
+======= curvature
+4.69054465727e-05
+======= curvature
+4.69246614141e-05
+======= curvature
+4.6939076116e-05
+======= curvature
+4.69583026918e-05
+======= curvature
+4.69583924463e-05
+======= curvature
+4.69776248769e-05
+======= curvature
+4.69968640019e-05
+======= curvature
+4.70112969057e-05
+======= curvature
+4.70305477387e-05
+======= curvature
+4.70306610183e-05
+======= curvature
+4.70499176834e-05
+======= curvature
+4.70643637334e-05
+======= curvature
+4.70836320849e-05
+======= curvature
+4.71029071104e-05
+======= curvature
+4.71030406098e-05
+======= curvature
+4.71223247755e-05
+======= curvature
+4.71367889414e-05
+======= curvature
+4.71560814352e-05
+======= curvature
+4.71705543416e-05
+======= curvature
+4.71755376617e-05
+======= curvature
+4.71948459349e-05
+======= curvature
+4.72093281669e-05
+======= curvature
+4.72286447365e-05
+======= curvature
+4.72431356883e-05
+======= curvature
+4.7248148624e-05
+======= curvature
+4.7262647237e-05
+======= curvature
+4.72819811851e-05
+======= curvature
+4.73013217629e-05
+======= curvature
+4.73158307092e-05
+======= curvature
+4.73208732694e-05
+======= curvature
+4.7335389863e-05
+======= curvature
+4.73547477669e-05
+======= curvature
+4.73692696984e-05
+======= curvature
+4.73886391735e-05
+======= curvature
+4.73937113663e-05
+======= curvature
+4.74082458886e-05
+======= curvature
+4.74276276788e-05
+======= curvature
+4.74421675132e-05
+======= curvature
+4.74615608457e-05
+======= curvature
+4.74618142704e-05
+======= curvature
+4.74812132922e-05
+======= curvature
+4.74957660407e-05
+======= curvature
+4.75151765811e-05
+======= curvature
+4.75345936993e-05
+======= curvature
+4.75348708285e-05
+======= curvature
+4.75542936106e-05
+======= curvature
+4.75688641673e-05
+======= curvature
+4.75882984385e-05
+======= curvature
+4.76028776076e-05
+======= curvature
+4.76080367669e-05
+======= curvature
+4.76274865969e-05
+======= curvature
+4.76420749073e-05
+======= curvature
+4.76615328363e-05
+======= curvature
+4.76761297364e-05
+======= curvature
+4.76813185535e-05
+======= curvature
+4.76959230271e-05
+======= curvature
+4.77153980107e-05
+======= curvature
+4.77348795237e-05
+======= curvature
+4.77494940992e-05
+======= curvature
+4.77547125786e-05
+======= curvature
+4.77693347119e-05
+======= curvature
+4.77888332221e-05
+======= curvature
+4.78034605355e-05
+======= curvature
+4.78229704384e-05
+======= curvature
+4.7828218584e-05
+======= curvature
+4.78428583202e-05
+======= curvature
+4.78623802812e-05
+======= curvature
+4.78770251698e-05
+======= curvature
+4.78965584919e-05
+======= curvature
+4.7901836307e-05
+======= curvature
+4.79164935884e-05
+======= curvature
+4.79360389231e-05
+======= curvature
+4.79507013291e-05
+======= curvature
+4.79702579928e-05
+======= curvature
+4.79755654799e-05
+======= curvature
+4.79902402482e-05
+======= curvature
+4.80098088786e-05
+======= curvature
+4.8024488743e-05
+======= curvature
+4.804406867e-05
+======= curvature
+4.80445074263e-05
+======= curvature
+4.80640962144e-05
+======= curvature
+4.80836880604e-05
+======= curvature
+4.80983853233e-05
+======= curvature
+4.81179884329e-05
+======= curvature
+4.81184510684e-05
+======= curvature
+4.81380630148e-05
+======= curvature
+4.81576779961e-05
+======= curvature
+4.8172392597e-05
+======= curvature
+4.81920188085e-05
+======= curvature
+4.81925053436e-05
+======= curvature
+4.82121403671e-05
+======= curvature
+4.82268674449e-05
+======= curvature
+4.82465102798e-05
+======= curvature
+4.82661595112e-05
+======= curvature
+4.82666699659e-05
+======= curvature
+4.82863245872e-05
+======= curvature
+4.83010722911e-05
+======= curvature
+4.83207380824e-05
+======= curvature
+4.83354907611e-05
+======= curvature
+4.83409446444e-05
+======= curvature
+4.83557047444e-05
+======= curvature
+4.83753870472e-05
+======= curvature
+4.83901520983e-05
+======= curvature
+4.840984553e-05
+======= curvature
+4.84153290836e-05
+======= curvature
+4.84301063053e-05
+======= curvature
+4.84498114155e-05
+======= curvature
+4.84645935581e-05
+======= curvature
+4.8484309762e-05
+======= curvature
+4.8484893925e-05
+======= curvature
+4.85046154313e-05
+======= curvature
+4.85194098594e-05
+======= curvature
+4.85391424308e-05
+======= curvature
+4.85588813197e-05
+======= curvature
+4.85594860673e-05
+======= curvature
+4.85792336389e-05
+======= curvature
+4.85940450431e-05
+======= curvature
+4.86138002325e-05
+======= curvature
+4.86286199032e-05
+======= curvature
+4.86341904768e-05
+======= curvature
+4.86490174934e-05
+======= curvature
+4.86687889322e-05
+======= curvature
+4.86836207783e-05
+======= curvature
+4.87034032039e-05
+======= curvature
+4.87040578339e-05
+======= curvature
+4.87238454696e-05
+======= curvature
+4.87386894516e-05
+======= curvature
+4.87584880446e-05
+======= curvature
+4.87733402391e-05
+======= curvature
+4.87789715699e-05
+======= curvature
+4.87938276485e-05
+======= curvature
+4.88136423564e-05
+======= curvature
+4.88285066251e-05
+======= curvature
+4.88483322469e-05
+======= curvature
+4.88490334088e-05
+======= curvature
+4.88688641777e-05
+======= curvature
+4.88837404802e-05
+======= curvature
+4.88986237086e-05
+======= curvature
+4.89184700223e-05
+======= curvature
+4.89191902531e-05
+======= curvature
+4.89390416816e-05
+======= curvature
+4.89539334641e-05
+======= curvature
+4.89737991724e-05
+======= curvature
+4.89886990854e-05
+======= curvature
+4.8994411959e-05
+======= curvature
+4.90093156838e-05
+======= curvature
+4.90291938677e-05
+======= curvature
+4.90441091351e-05
+======= curvature
+4.90639981222e-05
+======= curvature
+4.90647649623e-05
+======= curvature
+4.90796840528e-05
+======= curvature
+4.90995861458e-05
+======= curvature
+4.91145133154e-05
+======= curvature
+4.91344227351e-05
+======= curvature
+4.91352121098e-05
+======= curvature
+4.91551265464e-05
+======= curvature
+4.91700689821e-05
+======= curvature
+4.91850114245e-05
+======= curvature
+4.920494119e-05
+======= curvature
+4.92057565569e-05
+======= curvature
+7.4764078782e-05
+======= curvature
+7.47867912714e-05
+======= curvature
+7.48170844535e-05
+======= curvature
+7.48398091159e-05
+======= curvature
+7.48484130477e-05
+======= curvature
+7.48787236737e-05
+======= curvature
+7.49014614052e-05
+======= curvature
+7.49317882165e-05
+======= curvature
+7.49545433203e-05
+======= curvature
+7.49631746531e-05
+======= curvature
+7.49935188314e-05
+======= curvature
+7.50162817039e-05
+======= curvature
+7.50466420094e-05
+======= curvature
+7.50694222163e-05
+======= curvature
+7.50780861629e-05
+======= curvature
+7.51084637575e-05
+======= curvature
+7.51312569199e-05
+======= curvature
+7.51616505846e-05
+======= curvature
+7.51844505389e-05
+======= curvature
+7.51931470746e-05
+======= curvature
+7.52235579477e-05
+======= curvature
+7.52463760511e-05
+======= curvature
+7.52768029348e-05
+======= curvature
+7.52996277797e-05
+======= curvature
+7.53083568788e-05
+======= curvature
+7.53388061526e-05
+======= curvature
+7.53616438306e-05
+======= curvature
+7.53844866329e-05
+======= curvature
+7.54149534233e-05
+======= curvature
+7.54237203261e-05
+======= curvature
+7.54541973381e-05
+======= curvature
+7.54770597404e-05
+======= curvature
+7.54999272475e-05
+======= curvature
+7.553043222e-05
+======= curvature
+7.55392263665e-05
+======= curvature
+7.55621066005e-05
+======= curvature
+7.55926232532e-05
+======= curvature
+7.56155206327e-05
+======= curvature
+7.56384178196e-05
+======= curvature
+7.565487973e-05
+======= curvature
+7.5677784499e-05
+======= curvature
+7.57006996167e-05
+======= curvature
+7.57312557094e-05
+======= curvature
+7.57541773645e-05
+======= curvature
+7.57630342837e-05
+======= curvature
+7.57936124643e-05
+======= curvature
+7.58165467085e-05
+======= curvature
+7.58394859983e-05
+======= curvature
+7.58700813234e-05
+======= curvature
+7.58789759539e-05
+======= curvature
+7.59019277857e-05
+======= curvature
+7.59325398151e-05
+======= curvature
+7.59555033779e-05
+======= curvature
+7.59784772552e-05
+======= curvature
+7.59873968338e-05
+======= curvature
+7.60180322044e-05
+======= curvature
+7.60410132534e-05
+======= curvature
+7.60640046048e-05
+======= curvature
+7.60946622253e-05
+======= curvature
+7.61036141639e-05
+======= curvature
+7.61266179345e-05
+======= curvature
+7.61572920914e-05
+======= curvature
+7.61803021998e-05
+======= curvature
+7.62033172892e-05
+======= curvature
+7.62123047088e-05
+======= curvature
+7.62430019834e-05
+======= curvature
+7.626602941e-05
+======= curvature
+7.6289061801e-05
+======= curvature
+7.63121044616e-05
+======= curvature
+7.63288008609e-05
+======= curvature
+7.63518455398e-05
+======= curvature
+7.63749004781e-05
+======= curvature
+7.63979550502e-05
+======= curvature
+7.64287039358e-05
+======= curvature
+7.64377484586e-05
+======= curvature
+7.64608205696e-05
+======= curvature
+7.64838922936e-05
+======= curvature
+7.65146640236e-05
+======= curvature
+7.6537747231e-05
+======= curvature
+7.65468271552e-05
+======= curvature
+7.65699159634e-05
+======= curvature
+7.66007104471e-05
+======= curvature
+7.6623810699e-05
+======= curvature
+7.66469211733e-05
+======= curvature
+7.6656025826e-05
+======= curvature
+7.66791365397e-05
+======= curvature
+7.6709965527e-05
+======= curvature
+7.67330876367e-05
+======= curvature
+7.67562146236e-05
+======= curvature
+7.67653546211e-05
+======= curvature
+7.679620083e-05
+======= curvature
+7.6819339829e-05
+======= curvature
+7.68424836877e-05
+======= curvature
+7.68656377368e-05
+======= curvature
+7.68748023841e-05
+======= curvature
+7.6897956587e-05
+======= curvature
+7.69288381703e-05
+======= curvature
+7.69520090074e-05
+======= curvature
+7.6975179342e-05
+======= curvature
+7.69843739331e-05
+======= curvature
+7.7007555057e-05
+======= curvature
+7.70384653838e-05
+======= curvature
+7.7061652414e-05
+======= curvature
+7.70848442571e-05
+======= curvature
+7.70940741013e-05
+======= curvature
+7.71172713555e-05
+======= curvature
+7.71404734101e-05
+======= curvature
+7.71636856087e-05
+======= curvature
+7.71946373153e-05
+======= curvature
+7.72038916854e-05
+======= curvature
+7.72271102976e-05
+======= curvature
+7.72503390398e-05
+======= curvature
+7.72735672059e-05
+======= curvature
+7.72968001423e-05
+======= curvature
+7.73060875735e-05
+======= curvature
+7.73370747777e-05
+======= curvature
+7.73603193918e-05
+======= curvature
+7.73835741156e-05
+======= curvature
+7.7406828231e-05
+======= curvature
+7.74161401036e-05
+======= curvature
+7.74394048727e-05
+======= curvature
+7.74626690181e-05
+======= curvature
+7.74859378946e-05
+======= curvature
+7.75092168612e-05
+======= curvature
+7.75263191964e-05
+======= curvature
+7.75495996295e-05
+======= curvature
+7.75728847751e-05
+======= curvature
+7.7596179996e-05
+======= curvature
+7.76194745554e-05
+======= curvature
+7.76288437817e-05
+======= curvature
+7.76521489254e-05
+======= curvature
+7.7675453392e-05
+======= curvature
+7.76987625456e-05
+======= curvature
+7.77220817543e-05
+======= curvature
+7.77314785423e-05
+======= curvature
+7.77547975562e-05
+======= curvature
+7.77781266141e-05
+======= curvature
+7.78014549637e-05
+======= curvature
+7.78325684718e-05
+======= curvature
+7.78419948952e-05
+======= curvature
+7.78653399721e-05
+======= curvature
+7.78886843179e-05
+======= curvature
+7.79120333056e-05
+======= curvature
+7.79353923124e-05
+======= curvature
+7.79448462201e-05
+======= curvature
+7.79682049421e-05
+======= curvature
+7.79915736718e-05
+======= curvature
+7.80149416386e-05
+======= curvature
+7.80383142209e-05
+======= curvature
+7.804780096e-05
+======= curvature
+7.80711785992e-05
+======= curvature
+7.80945608401e-05
+======= curvature
+7.81179530677e-05
+======= curvature
+7.81413445002e-05
+======= curvature
+7.81508532579e-05
+======= curvature
+7.81742550975e-05
+======= curvature
+7.81976561261e-05
+======= curvature
+7.82210617295e-05
+======= curvature
+7.82444772981e-05
+======= curvature
+7.82540134215e-05
+======= curvature
+7.82774285717e-05
+======= curvature
+7.83008536753e-05
+======= curvature
+7.83242779353e-05
+======= curvature
+7.83477067431e-05
+======= curvature
+7.83572755901e-05
+======= curvature
+7.83807093333e-05
+======= curvature
+7.84041476101e-05
+======= curvature
+7.84275904162e-05
+======= curvature
+7.84510431503e-05
+======= curvature
+7.84528137048e-05
+======= curvature
+7.84762698282e-05
+======= curvature
+7.84997250609e-05
+======= curvature
+7.85231848012e-05
+======= curvature
+7.85466544516e-05
+======= curvature
+7.85562703297e-05
+======= curvature
+7.85797394283e-05
+======= curvature
+7.86032184248e-05
+======= curvature
+7.86266964974e-05
+======= curvature
+7.86501790498e-05
+======= curvature
+7.86598275389e-05
+======= curvature
+7.86833149044e-05
+======= curvature
+0.000105768916371
+======= curvature
+0.000105800498772
+======= curvature
+0.000105821549759
+======= curvature
+0.000105839306571
+======= curvature
+0.000105870893525
+======= curvature
+0.00010590248645
+======= curvature
+0.00010593408534
+======= curvature
+0.000105965697472
+======= curvature
+0.000105983481752
+======= curvature
+0.000106015094377
+======= curvature
+0.000106046720226
+======= curvature
+0.000106067800137
+======= curvature
+0.000106099435876
+======= curvature
+0.000106117252233
+======= curvature
+0.000106148888404
+======= curvature
+0.000106180537775
+======= curvature
+0.000106212185759
+======= curvature
+0.000106243839639
+======= curvature
+0.000106251140913
+======= curvature
+0.000106282800493
+======= curvature
+0.00010631447325
+======= curvature
+0.000106346144583
+======= curvature
+0.000106377821782
+======= curvature
+0.000106395711939
+======= curvature
+0.000106416832058
+======= curvature
+0.00010644852076
+======= curvature
+0.000106480222608
+======= curvature
+0.000106511922989
+======= curvature
+0.000106529837688
+======= curvature
+0.000106561552923
+======= curvature
+0.000106582692338
+======= curvature
+0.000106614417264
+======= curvature
+0.000106646140688
+======= curvature
+0.000106664087152
+======= curvature
+0.000106695825378
+======= curvature
+0.000106716980097
+======= curvature
+0.000106748720648
+======= curvature
+0.000106780474289
+======= curvature
+0.00010679845244
+======= curvature
+0.00010681962585
+======= curvature
+0.000106851383445
+======= curvature
+0.000106883146789
+======= curvature
+0.000106914923196
+======= curvature
+0.000106932932953
+======= curvature
+0.000106954121506
+======= curvature
+0.000106985901784
+======= curvature
+0.000107017687778
+======= curvature
+0.000107049479483
+======= curvature
+0.000107056925239
+======= curvature
+0.000107088722361
+======= curvature
+0.000107120532504
+======= curvature
+0.000107152341006
+======= curvature
+0.000107173554715
+======= curvature
+0.000107191624905
+======= curvature
+0.000107223444454
+======= curvature
+0.000107244665521
+======= curvature
+0.0001072764945
+======= curvature
+0.000107308329128
+======= curvature
+0.000107326438019
+======= curvature
+0.000107347662835
+======= curvature
+0.000107379515756
+======= curvature
+0.000107411366962
+======= curvature
+0.000107432609115
+======= curvature
+0.000107450739429
+======= curvature
+0.000107482601527
+======= curvature
+0.000107503850931
+======= curvature
+0.000107535722355
+======= curvature
+0.000107567599364
+======= curvature
+0.000107575136971
+======= curvature
+0.00010760701921
+======= curvature
+0.000107638914363
+======= curvature
+0.00010766017354
+======= curvature
+0.000107692070609
+======= curvature
+0.000107710268083
+======= curvature
+0.000107731534416
+======= curvature
+0.000107763449556
+======= curvature
+0.000107795362875
+======= curvature
+0.000107816646392
+======= curvature
+0.000107834865047
+======= curvature
+0.000107866789019
+======= curvature
+0.00010788807963
+======= curvature
+0.000107920012771
+======= curvature
+0.000107951951403
+======= curvature
+0.0001079595566
+======= curvature
+0.000107991500317
+======= curvature
+0.000108012804076
+======= curvature
+0.000108044756909
+======= curvature
+0.000108076722567
+======= curvature
+0.000108084342233
+======= curvature
+0.000108116305563
+======= curvature
+0.000108137622384
+======= curvature
+0.000108169594778
+======= curvature
+0.00010820157997
+======= curvature
+0.000108209221432
+======= curvature
+0.000108241204244
+======= curvature
+0.000108262534038
+======= curvature
+0.000108294525861
+======= curvature
+0.000108326530455
+======= curvature
+0.000108334193678
+======= curvature
+0.000108366203214
+======= curvature
+0.000108387538518
+======= curvature
+0.000108419549638
+======= curvature
+0.000108440898283
+======= curvature
+0.000108459258451
+======= curvature
+0.000108491287207
+======= curvature
+0.000108512635302
+======= curvature
+0.000108544672965
+======= curvature
+0.000108566026989
+======= curvature
+0.000108584415223
+======= curvature
+0.00010860577986
+======= curvature
+0.000108637823862
+======= curvature
+0.000108659194402
+======= curvature
+0.000108691247246
+======= curvature
+0.000108698981062
+======= curvature
+0.000108731038705
+======= curvature
+0.000108752418327
+======= curvature
+0.00010878448477
+======= curvature
+0.000108805862863
+======= curvature
+0.000108824311929
+======= curvature
+0.000108845693189
+======= curvature
+0.000108877780544
+======= curvature
+0.000108899167635
+======= curvature
+0.000108931263729
+======= curvature
+0.000108939031507
+======= curvature
+0.00010897112491
+======= curvature
+0.000108992528342
+======= curvature
+0.000109013934093
+======= curvature
+0.000109046039663
+======= curvature
+0.000109053827133
+======= curvature
+0.000109085944757
+======= curvature
+0.000109107351991
+======= curvature
+0.000109139478262
+======= curvature
+0.00010916089125
+======= curvature
+0.000109168705784
+======= curvature
+0.000109200832715
+======= curvature
+0.00010922225847
+======= curvature
+0.000109254393994
+======= curvature
+0.000109275825472
+======= curvature
+0.000109283652232
+======= curvature
+0.000109315795748
+======= curvature
+0.000109337232546
+======= curvature
+0.000109358664212
+======= curvature
+0.000109390827088
+======= curvature
+0.000109398673444
+======= curvature
+0.000109420117806
+======= curvature
+0.000109452281186
+======= curvature
+0.000109473731209
+======= curvature
+0.00010949517608
+======= curvature
+0.000109513776403
+======= curvature
+0.000109535224253
+======= curvature
+0.00010955668177
+======= curvature
+0.000109578134121
+======= curvature
+0.000109610327985
+======= curvature
+0.000109618211588
+======= curvature
+0.000109639676554
+======= curvature
+0.000109661136341
+======= curvature
+0.000109693341343
+======= curvature
+0.000109714806717
+======= curvature
+0.000109722715395
+======= curvature
+0.000109744182574
+======= curvature
+0.000109776398646
+======= curvature
+0.000109797871384
+======= curvature
+0.000109819353765
+======= curvature
+0.00010982727265
+======= curvature
+0.000109859499724
+======= curvature
+0.000109880979782
+======= curvature
+0.000109902469474
+======= curvature
+0.000109923953947
+======= curvature
+0.000109931897858
+======= curvature
+0.000109953384089
+======= curvature
+0.000109985628701
+======= curvature
+0.000110007120426
+======= curvature
+0.000110028621775
+======= curvature
+0.000110036575827
+======= curvature
+0.000110058078911
+======= curvature
+0.000138369795949
+======= curvature
+0.000138396830775
+======= curvature
+0.000138437378814
+======= curvature
+0.000138450886612
+======= curvature
+0.000138477919038
+======= curvature
+0.000138504963541
+======= curvature
+0.000138532010774
+======= curvature
+0.000138559051386
+======= curvature
+0.000138572577658
+======= curvature
+0.000138599621073
+======= curvature
+0.000138626676552
+======= curvature
+0.000138653725396
+======= curvature
+0.0001386807863
+======= curvature
+0.000138707855227
+======= curvature
+0.000138734920259
+======= curvature
+0.000138761978638
+======= curvature
+0.000138789049067
+======= curvature
+0.000138816112836
+======= curvature
+0.000138829678036
+======= curvature
+0.000138856744548
+======= curvature
+0.000138883823101
+======= curvature
+0.000138910904336
+======= curvature
+0.000138937978892
+======= curvature
+0.000138951562441
+======= curvature
+0.000138978639712
+======= curvature
+0.000139005729012
+======= curvature
+0.000139032811617
+======= curvature
+0.000139059906247
+======= curvature
+0.000139059958365
+======= curvature
+0.000139087044991
+======= curvature
+0.000139114143636
+======= curvature
+0.000139141235568
+======= curvature
+0.000139168339515
+======= curvature
+0.000139181948185
+======= curvature
+0.000139209054793
+======= curvature
+0.000139236164043
+======= curvature
+0.00013926326656
+======= curvature
+0.000139290381079
+======= curvature
+0.000139290448303
+======= curvature
+0.000139317564143
+======= curvature
+0.000139344682608
+======= curvature
+0.000139371794325
+======= curvature
+0.000139398918032
+======= curvature
+0.000139412561034
+======= curvature
+0.000139439687349
+======= curvature
+0.000139453251486
+======= curvature
+0.00013948037234
+======= curvature
+0.000139507505174
+======= curvature
+0.000139521164248
+======= curvature
+0.000139548299664
+======= curvature
+0.000139561858968
+======= curvature
+0.000139588998277
+======= curvature
+0.000139616140176
+======= curvature
+0.000139629815287
+======= curvature
+0.000139643387192
+======= curvature
+0.000139670523558
+======= curvature
+0.000139697671884
+======= curvature
+0.000139724822786
+======= curvature
+0.000139724936061
+======= curvature
+0.000139752088207
+======= curvature
+0.000139779233539
+======= curvature
+0.00013980639082
+======= curvature
+0.000139819970421
+======= curvature
+0.000139833675441
+======= curvature
+0.000139860836509
+======= curvature
+0.000139874418001
+======= curvature
+0.000139901573513
+======= curvature
+0.000139928740959
+======= curvature
+0.000139942461918
+======= curvature
+0.000139956046564
+======= curvature
+0.00013998321776
+======= curvature
+0.000139996794921
+======= curvature
+0.000140023969923
+======= curvature
+0.000140037714121
+======= curvature
+0.000140051293143
+======= curvature
+0.000140078471865
+======= curvature
+0.000140105643719
+======= curvature
+0.000140119235288
+======= curvature
+0.000140132993308
+======= curvature
+0.000140146585464
+======= curvature
+0.000140173762267
+======= curvature
+0.000140200950975
+======= curvature
+0.000140214536875
+======= curvature
+0.000140228308691
+======= curvature
+0.000140241904564
+======= curvature
+0.000140269088789
+======= curvature
+0.000140282686537
+======= curvature
+0.000140309883906
+======= curvature
+0.00014032366009
+======= curvature
+0.000140337259655
+======= curvature
+0.000140364451253
+======= curvature
+0.000140378052683
+======= curvature
+0.000140405257406
+======= curvature
+0.000140405452016
+======= curvature
+0.000140432648461
+======= curvature
+0.000140432648461
+======= curvature
+0.000140446252312
+======= curvature
+0.000140446252312
+======= curvature
+0.000140446451304
+======= curvature
+0.000140446451304
+======= curvature
+0.000140460045692
+======= curvature
+0.000140460045692
+======= curvature
+0.000140473650098
+======= curvature
+0.000140460246226
+======= curvature
+0.000140473849951
+======= curvature
+0.000140473849951
+======= curvature
+0.000140473849951
+======= curvature
+0.000140487454294
+======= curvature
+0.000140474052028
+======= curvature
+0.000140487655689
+======= curvature
+0.000140487655689
+======= curvature
+0.000140501250564
+======= curvature
+0.000140501250564
+======= curvature
+0.000140501455601
+======= curvature
+0.000140501455601
+======= curvature
+0.000140515059811
+======= curvature
+0.000140515059811
+======= curvature
+0.000140528664635
+======= curvature
+0.000140515266391
+======= curvature
+0.000140515266391
+======= curvature
+0.000140528861131
+======= curvature
+0.000140528861131
+======= curvature
+0.000140528861131
+======= curvature
+0.000140529069252
+======= curvature
+0.000140529069252
+======= curvature
+0.000140529069252
+======= curvature
+0.000140542673323
+======= curvature
+0.000140542673323
+======= curvature
+0.000140529277496
+======= curvature
+0.000140542880883
+======= curvature
+0.000140542880883
+======= curvature
+0.000140542880883
+======= curvature
+0.000140556484883
+======= curvature
+0.000140543090669
+======= curvature
+0.000140543090669
+======= curvature
+0.000140556684584
+======= curvature
+0.000140556684584
+======= curvature
+0.000140556684584
+======= curvature
+0.000140556895911
+======= curvature
+0.000140556895911
+======= curvature
+0.000140556895911
+======= curvature
+0.000140570499152
+======= curvature
+0.000140570499152
+======= curvature
+0.000140557107361
+======= curvature
+0.000140570709917
+======= curvature
+0.000140570709917
+======= curvature
+0.000140570709917
+======= curvature
+0.000140584303683
+======= curvature
+0.000140570913507
+======= curvature
+0.000140570913507
+======= curvature
+0.000140570913507
+======= curvature
+0.000140584515987
+======= curvature
+0.000140584515987
+======= curvature
+0.000140571126621
+======= curvature
+0.000140571126621
+======= curvature
+0.000140584728415
+======= curvature
+0.000140584728415
+======= curvature
+0.000140584728415
+======= curvature
+0.000140571339858
+======= curvature
+0.000140584940966
+======= curvature
+0.000140584940966
+======= curvature
+0.000140584940966
+======= curvature
+0.000140584940966
+======= curvature
+0.000140571553218
+======= curvature
+0.000140571553218
+======= curvature
+0.000140585153639
+======= curvature
+0.000140585153639
+======= curvature
+0.000140585153639
+======= curvature
+0.000140571766702
+======= curvature
+0.000140585357036
+======= curvature
+0.000140585357036
+======= curvature
+0.000169422543029
+======= curvature
+0.000169422543029
+======= curvature
+0.000169409156902
+======= curvature
+0.00016942554568
+======= curvature
+0.00016942554568
+======= curvature
+0.00016942554568
+======= curvature
+0.00016942554568
+======= curvature
+0.000169428550684
+======= curvature
+0.000169428550684
+======= curvature
+0.000169428550684
+======= curvature
+0.000169428550684
+======= curvature
+0.00016944493963
+======= curvature
+0.000169431555936
+======= curvature
+0.000169431555936
+======= curvature
+0.000169447932991
+======= curvature
+0.000169447932991
+======= curvature
+0.000169447932991
+======= curvature
+0.000169434550108
+======= curvature
+0.000169450937925
+======= curvature
+0.000169450937925
+======= curvature
+0.000169450937925
+======= curvature
+0.000169450937925
+======= curvature
+0.000169453945213
+======= curvature
+0.000169453945213
+======= curvature
+0.000169453945213
+======= curvature
+0.000169453945213
+======= curvature
+0.000169453945213
+======= curvature
+0.000169440563955
+======= curvature
+0.000169456950642
+======= curvature
+0.000169456950642
+======= curvature
+0.000169456950642
+======= curvature
+0.000169456950642
+======= curvature
+0.000169443570196
+======= curvature
+0.000169459956318
+======= curvature
+0.000169459956318
+======= curvature
+0.000169459956318
+======= curvature
+0.000169459956318
+======= curvature
+0.000169446576685
+======= curvature
+0.000169446576685
+======= curvature
+0.000169446576685
+======= curvature
+0.000169462950916
+======= curvature
+0.000169462950916
+======= curvature
+0.000169449572097
+======= curvature
+0.000169449572097
+======= curvature
+0.000169449572097
+======= curvature
+0.000169465957085
+======= curvature
+0.000169465957085
+======= curvature
+0.00016945257908
+======= curvature
+0.00016945257908
+======= curvature
+0.00016945257908
+======= curvature
+0.000169468963501
+======= curvature
+0.000169468963501
+======= curvature
+0.00016945558631
+======= curvature
+0.00016945558631
+======= curvature
+0.00016945558631
+======= curvature
+0.000169471970164
+======= curvature
+0.000169471970164
+======= curvature
+0.000169458593787
+======= curvature
+0.000169458593787
+======= curvature
+0.000169458593787
+======= curvature
+0.000169474965751
+======= curvature
+0.000169474965751
+======= curvature
+0.000169461590188
+======= curvature
+0.000169461590188
+======= curvature
+0.000169477972906
+======= curvature
+0.000169477972906
+======= curvature
+0.000169477972906
+======= curvature
+0.000169464598159
+======= curvature
+0.000169464598159
+======= curvature
+0.000169480980308
+======= curvature
+0.000169480980308
+======= curvature
+0.000169480980308
+======= curvature
+0.000169483990065
+======= curvature
+0.000169483990065
+======= curvature
+0.000169483990065
+======= curvature
+0.000169483990065
+======= curvature
+0.000169500361047
+======= curvature
+0.000169486988747
+======= curvature
+0.000169486988747
+======= curvature
+0.000169486988747
+======= curvature
+0.000169486988747
+======= curvature
+0.000169486988747
+======= curvature
+0.000169489998997
+======= curvature
+0.000169489998997
+======= curvature
+0.000169489998997
+======= curvature
+0.000169489998997
+======= curvature
+0.000169489998997
+======= curvature
+0.000169476627514
+======= curvature
+0.000169476627514
+======= curvature
+0.000169476627514
+======= curvature
+0.000169493007385
+======= curvature
+0.000169493007385
+======= curvature
+0.000169479636719
+======= curvature
+0.000169479636719
+======= curvature
+0.000169479636719
+======= curvature
+0.000169496016019
+======= curvature
+0.000169496016019
+======= curvature
+0.000169482646171
+======= curvature
+0.000169482646171
+======= curvature
+0.000169482646171
+======= curvature
+0.000169482646171
+======= curvature
+0.0001694990249
+======= curvature
+0.000169485655869
+======= curvature
+0.000169485655869
+======= curvature
+0.000169485655869
+======= curvature
+0.000169502022708
+======= curvature
+0.000169502022708
+======= curvature
+0.000169488654495
+======= curvature
+0.000169488654495
+======= curvature
+0.000169488654495
+======= curvature
+0.00016950503208
+======= curvature
+0.00016950503208
+======= curvature
+0.000169491664685
+======= curvature
+0.000169491664685
+======= curvature
+0.000169508041698
+======= curvature
+0.000169508041698
+======= curvature
+0.000169508041698
+======= curvature
+0.000169494675122
+======= curvature
+0.000169494675122
+======= curvature
+0.000169511051563
+======= curvature
+0.000169511051563
+======= curvature
+0.000169511051563
+======= curvature
+0.000169514052465
+======= curvature
+0.000169514052465
+======= curvature
+0.000169514052465
+======= curvature
+0.000169514052465
+======= curvature
+0.00016953042905
+======= curvature
+0.000169517064932
+======= curvature
+0.000169517064932
+======= curvature
+0.000169517064932
+======= curvature
+0.000169533440943
+======= curvature
+0.000169533440943
+======= curvature
+0.000169520077645
+======= curvature
+0.000169536453081
+======= curvature
+0.000169536453081
+======= curvature
+0.000169536453081
+======= curvature
+0.000169536453081
+======= curvature
+0.000169539467578
+======= curvature
+0.000169539467578
+======= curvature
+0.000169539467578
+======= curvature
+0.000169539467578
+======= curvature
+0.000169555831838
+======= curvature
+0.000169542471003
+======= curvature
+0.000169542471003
+======= curvature
+0.000169542471003
+======= curvature
+0.000169542471003
+======= curvature
+0.000169558846004
+======= curvature
+0.00016954548599
+======= curvature
+0.00016954548599
+======= curvature
+0.00016954548599
+======= curvature
+0.00016954548599
+======= curvature
+0.00016954548599
+======= curvature
+0.000169548501224
+======= curvature
+0.000169548501224
+======= curvature
+0.000169548501224
+======= curvature
+0.000169548501224
+======= curvature
+0.000169548501224
+======= curvature
+0.000169551516704
+======= curvature
+0.000169551516704
+======= curvature
+0.000169551516704
+======= curvature
+0.000169551516704
+======= curvature
+0.000169551516704
+======= curvature
+0.000169554521114
+======= curvature
+0.000169554521114
+======= curvature
+0.000169554521114
+======= curvature
+0.00016957089381
+======= curvature
+0.00016957089381
+======= curvature
+0.000169557537085
+======= curvature
+0.000169557537085
+======= curvature
+0.000169573909203
+======= curvature
+0.000169573909203
+======= curvature
+0.000169573909203
+======= curvature
+0.000169560553302
+======= curvature
+0.000169576924842
+======= curvature
+0.000169576924842
+======= curvature
+0.000198520174795
+======= curvature
+0.000198539341449
+======= curvature
+0.000198525987195
+======= curvature
+0.000198525987195
+======= curvature
+0.000198525987195
+======= curvature
+0.000198545140146
+======= curvature
+0.000198545140146
+======= curvature
+0.000198531786716
+======= curvature
+0.000198531786716
+======= curvature
+0.000198550952454
+======= curvature
+0.000198550952454
+======= curvature
+0.000198550952454
+======= curvature
+0.000198537599849
+======= curvature
+0.000198537599849
+======= curvature
+0.000198537599849
+======= curvature
+0.000198556765129
+======= curvature
+0.000198556765129
+======= curvature
+0.000198543413349
+======= curvature
+0.000198543413349
+======= curvature
+0.000198543413349
+======= curvature
+0.000198543413349
+======= curvature
+0.000198562578169
+======= curvature
+0.000198549227215
+======= curvature
+0.000198549227215
+======= curvature
+0.000198549227215
+======= curvature
+0.000198549227215
+======= curvature
+0.000198568378332
+======= curvature
+0.000198555028203
+======= curvature
+0.000198555028203
+======= curvature
+0.000198555028203
+======= curvature
+0.000198555028203
+======= curvature
+0.000198574192104
+======= curvature
+0.000198560842801
+======= curvature
+0.000198560842801
+======= curvature
+0.000198560842801
+======= curvature
+0.000198580006241
+======= curvature
+0.000198580006241
+======= curvature
+0.000198566657765
+======= curvature
+0.000198566657765
+======= curvature
+0.000198585820745
+======= curvature
+0.000198585820745
+======= curvature
+0.000198585820745
+======= curvature
+0.000198572473095
+======= curvature
+0.000198591635613
+======= curvature
+0.000198591635613
+======= curvature
+0.000198591635613
+======= curvature
+0.000198610785714
+======= curvature
+0.000198597439719
+======= curvature
+0.000198597439719
+======= curvature
+0.000198597439719
+======= curvature
+0.0001986166026
+======= curvature
+0.0001986166026
+======= curvature
+0.000198603257433
+======= curvature
+0.000198603257433
+======= curvature
+0.000198622419852
+======= curvature
+0.000198622419852
+======= curvature
+0.000198622419852
+======= curvature
+0.000198609075513
+======= curvature
+0.000198628237468
+======= curvature
+0.000198628237468
+======= curvature
+0.000198628237468
+======= curvature
+0.000198628237468
+======= curvature
+0.000198614893958
+======= curvature
+0.000198614893958
+======= curvature
+0.000198614893958
+======= curvature
+0.000198634042207
+======= curvature
+0.000198634042207
+======= curvature
+0.000198620699525
+======= curvature
+0.000198620699525
+======= curvature
+0.000198620699525
+======= curvature
+0.000198639860552
+======= curvature
+0.000198639860552
+======= curvature
+0.000198626518699
+======= curvature
+0.000198626518699
+======= curvature
+0.000198645679261
+======= curvature
+0.000198645679261
+======= curvature
+0.000198645679261
+======= curvature
+0.000198632338238
+======= curvature
+0.000198632338238
+======= curvature
+0.000198651498335
+======= curvature
+0.000198651498335
+======= curvature
+0.000198651498335
+======= curvature
+0.000198638158142
+======= curvature
+0.000198657317773
+======= curvature
+0.000198657317773
+======= curvature
+0.000198657317773
+======= curvature
+0.000198657317773
+======= curvature
+0.00019866312645
+======= curvature
+0.00019866312645
+======= curvature
+0.00019866312645
+======= curvature
+0.00019866312645
+======= curvature
+0.000198682286434
+======= curvature
+0.000198668948733
+======= curvature
+0.000198668948733
+======= curvature
+0.000198688108249
+======= curvature
+0.000198688108249
+======= curvature
+0.000198688108249
+======= curvature
+0.00019867477138
+======= curvature
+0.000198693930429
+======= curvature
+0.000198693930429
+======= curvature
+0.000198693930429
+======= curvature
+0.000198693930429
+======= curvature
+0.000198699741848
+======= curvature
+0.000198699741848
+======= curvature
+0.000198699741848
+======= curvature
+0.000198718901245
+======= curvature
+0.000198718901245
+======= curvature
+0.000198705566872
+======= curvature
+0.000198705566872
+======= curvature
+0.000198705566872
+======= curvature
+0.000198705566872
+======= curvature
+0.0001987247258
+======= curvature
+0.000198711392259
+======= curvature
+0.000198711392259
+======= curvature
+0.000198711392259
+======= curvature
+0.000198711392259
+======= curvature
+0.000198730550717
+======= curvature
+0.00019871721801
+======= curvature
+0.00019871721801
+======= curvature
+0.00019871721801
+======= curvature
+0.000198736375998
+======= curvature
+0.000198736375998
+======= curvature
+0.000198723044124
+======= curvature
+0.000198723044124
+======= curvature
+0.000198723044124
+======= curvature
+0.000198742188402
+======= curvature
+0.000198742188402
+======= curvature
+0.000198728857362
+======= curvature
+0.000198728857362
+======= curvature
+0.000198728857362
+======= curvature
+0.000198748014407
+======= curvature
+0.000198748014407
+======= curvature
+0.000198734684201
+======= curvature
+0.000198753840775
+======= curvature
+0.000198753840775
+======= curvature
+0.000198753840775
+======= curvature
+0.000198753840775
+======= curvature
+0.000198759669626
+======= curvature
+0.000198759669626
+======= curvature
+0.000198759669626
+======= curvature
+0.000198759669626
+======= curvature
+0.0001987788133
+======= curvature
+0.000198765485598
+======= curvature
+0.000198765485598
+======= curvature
+0.000198765485598
+======= curvature
+0.000198784642039
+======= curvature
+0.000198784642039
+======= curvature
+0.000198771315173
+======= curvature
+0.000198790471139
+======= curvature
+0.000198790471139
+======= curvature
+0.000198790471139
+======= curvature
+0.000198790471139
+======= curvature
+0.000198796302723
+======= curvature
+0.000198796302723
+======= curvature
+0.000198796302723
+======= curvature
+0.000198796302723
+======= curvature
+0.000198796302723
+======= curvature
+0.000198802121428
+======= curvature
+0.000198802121428
+======= curvature
+0.000198802121428
+======= curvature
+0.000198802121428
+======= curvature
+0.000198802121428
+======= curvature
+0.000198788797071
+======= curvature
+0.000198807951614
+======= curvature
+0.000198807951614
+======= curvature
+0.000198807951614
+======= curvature
+0.000198807951614
+======= curvature
+0.000198794628094
+======= curvature
+0.00019881378216
+======= curvature
+0.00019881378216
+======= curvature
+0.00019881378216
+======= curvature
+0.00019881378216
+======= curvature
+0.00019881961519
+======= curvature
+0.00019881961519
+======= curvature
+0.00019881961519
+======= curvature
+0.00019881961519
+======= curvature
+0.00019881961519
+======= curvature
+0.000198825448581
+======= curvature
+0.000198825448581
+======= curvature
+0.000198825448581
+======= curvature
+0.000198825448581
+======= curvature
+0.000198825448581
+======= curvature
+0.000198831269095
+======= curvature
+0.000198831269095
+======= curvature
+0.000227891985358
+======= curvature
+0.000227913938223
+======= curvature
+0.000227913938223
+======= curvature
+0.000227900618893
+======= curvature
+0.000227922571397
+======= curvature
+0.000227922571397
+======= curvature
+0.000227922571397
+======= curvature
+0.000227922571397
+======= curvature
+0.000227931207173
+======= curvature
+0.000227931207173
+======= curvature
+0.000227931207173
+======= curvature
+0.000227931207173
+======= curvature
+0.000227953145065
+======= curvature
+0.000227939828254
+======= curvature
+0.000227939828254
+======= curvature
+0.000227961780955
+======= curvature
+0.000227961780955
+======= curvature
+0.000227961780955
+======= curvature
+0.000227970419446
+======= curvature
+0.000227970419446
+======= curvature
+0.000227970419446
+======= curvature
+0.000227992372704
+======= curvature
+0.000227992372704
+======= curvature
+0.000227979058415
+======= curvature
+0.000227979058415
+======= curvature
+0.000227979058415
+======= curvature
+0.000228001011308
+======= curvature
+0.000228001011308
+======= curvature
+0.000227987697861
+======= curvature
+0.000227987697861
+======= curvature
+0.000227987697861
+======= curvature
+0.000228009635218
+======= curvature
+0.000228009635218
+======= curvature
+0.000227996322612
+======= curvature
+0.000227996322612
+======= curvature
+0.000227996322612
+======= curvature
+0.000228018274775
+======= curvature
+0.000228018274775
+======= curvature
+0.000228004963011
+======= curvature
+0.000228004963011
+======= curvature
+0.000228004963011
+======= curvature
+0.000228004963011
+======= curvature
+0.000228026914808
+======= curvature
+0.000228013603886
+======= curvature
+0.000228013603886
+======= curvature
+0.000228013603886
+======= curvature
+0.000228035555318
+======= curvature
+0.000228035555318
+======= curvature
+0.000228022245238
+======= curvature
+0.000228022245238
+======= curvature
+0.000228044181132
+======= curvature
+0.000228044181132
+======= curvature
+0.000228044181132
+======= curvature
+0.000228030871896
+======= curvature
+0.000228030871896
+======= curvature
+0.000228052822592
+======= curvature
+0.000228052822592
+======= curvature
+0.000228052822592
+======= curvature
+0.000228039514199
+======= curvature
+0.000228061464527
+======= curvature
+0.000228061464527
+======= curvature
+0.000228061464527
+======= curvature
+0.000228083415767
+======= curvature
+0.000228070109062
+======= curvature
+0.000228070109062
+======= curvature
+0.000228070109062
+======= curvature
+0.000228092059934
+======= curvature
+0.000228092059934
+======= curvature
+0.000228078754073
+======= curvature
+0.000228078754073
+======= curvature
+0.000228078754073
+======= curvature
+0.000228100689404
+======= curvature
+0.000228100689404
+======= curvature
+0.000228087384388
+======= curvature
+0.000228087384388
+======= curvature
+0.000228109334518
+======= curvature
+0.000228109334518
+======= curvature
+0.000228109334518
+======= curvature
+0.000228096030348
+======= curvature
+0.000228096030348
+======= curvature
+0.000228096030348
+======= curvature
+0.000228096030348
+======= curvature
+0.000228117980107
+======= curvature
+0.000228104676782
+======= curvature
+0.000228104676782
+======= curvature
+0.000228104676782
+======= curvature
+0.000228104676782
+======= curvature
+0.000228104676782
+======= curvature
+0.00022811332369
+======= curvature
+0.00022811332369
+======= curvature
+0.00022811332369
+======= curvature
+0.00022811332369
+======= curvature
+0.000228135257537
+======= curvature
+0.000228121955903
+======= curvature
+0.000228121955903
+======= curvature
+0.000228121955903
+======= curvature
+0.000228121955903
+======= curvature
+0.000228143904545
+======= curvature
+0.000228130603759
+======= curvature
+0.000228130603759
+======= curvature
+0.000228130603759
+======= curvature
+0.000228130603759
+======= curvature
+0.000228152552027
+======= curvature
+0.000228139252087
+======= curvature
+0.000228139252087
+======= curvature
+0.000228139252087
+======= curvature
+0.000228161199982
+======= curvature
+0.000228161199982
+======= curvature
+0.00022814790089
+======= curvature
+0.00022816984841
+======= curvature
+0.00022816984841
+======= curvature
+0.00022816984841
+======= curvature
+0.00022816984841
+======= curvature
+0.000228178484268
+======= curvature
+0.000228178484268
+======= curvature
+0.000228178484268
+======= curvature
+0.000228178484268
+======= curvature
+0.000228178484268
+======= curvature
+0.000228187135768
+======= curvature
+0.000228187135768
+======= curvature
+0.000228187135768
+======= curvature
+0.000228187135768
+======= curvature
+0.000228187135768
+======= curvature
+0.000228173839219
+======= curvature
+0.000228195785612
+======= curvature
+0.000228195785612
+======= curvature
+0.000228195785612
+======= curvature
+0.000228195785612
+======= curvature
+0.000228182489912
+======= curvature
+0.000228182489912
+======= curvature
+0.000228182489912
+======= curvature
+0.000228204435927
+======= curvature
+0.000228204435927
+======= curvature
+0.000228191141077
+======= curvature
+0.000228191141077
+======= curvature
+0.000228191141077
+======= curvature
+0.000228191141077
+======= curvature
+0.000228191141077
+======= curvature
+0.000228199777547
+======= curvature
+0.000228199777547
+======= curvature
+0.000228199777547
+======= curvature
+0.000228199777547
+======= curvature
+0.000228199777547
+======= curvature
+0.000228208429655
+======= curvature
+0.000228208429655
+======= curvature
+0.000228208429655
+======= curvature
+0.000228208429655
+======= curvature
+0.000228208429655
+======= curvature
+0.000228195136504
+======= curvature
+0.000228217080105
+======= curvature
+0.000228217080105
+======= curvature
+0.000228217080105
+======= curvature
+0.000228217080105
+======= curvature
+0.000228203787805
+======= curvature
+0.000228225731027
+======= curvature
+0.000228225731027
+======= curvature
+0.000228225731027
+======= curvature
+0.000228225731027
+======= curvature
+0.000228234384548
+======= curvature
+0.000228234384548
+======= curvature
+0.000228234384548
+======= curvature
+0.000228234384548
+======= curvature
+0.000228256313122
+======= curvature
+0.000228243023374
+======= curvature
+0.000228243023374
+======= curvature
+0.000228243023374
+======= curvature
+0.000228264966731
+======= curvature
+0.000228264966731
+======= curvature
+0.000228251677835
+======= curvature
+0.000228251677835
+======= curvature
+0.000228251677835
+======= curvature
+0.00022827362081
+======= curvature
+0.00022827362081
+======= curvature
+0.000228260332766
+======= curvature
+0.000228260332766
+======= curvature
+0.000228282275359
+======= curvature
+0.000228282275359
+======= curvature
+0.000228282275359
+======= curvature
+0.000228290917342
+======= curvature
+0.000228290917342
+======= curvature
+0.000228290917342
+======= curvature
+0.000228290917342
+======= curvature
+0.000228312860446
+======= curvature
+0.000228299574959
+======= curvature
+0.000228299574959
+======= curvature
+0.000228299574959
+======= curvature
+0.000228299574959
+======= curvature
+0.000228321517678
+======= curvature
+0.000228308233045
+======= curvature
+0.000228308233045
+======= curvature
+0.000228308233045
+======= curvature
+0.000228308233045
+======= curvature
+0.00022833017538
+======= curvature
+0.0002283168916
+======= curvature
+0.0002283168916
+======= curvature
+0.0002283168916
+======= curvature
+0.0002283168916
+======= curvature
+0.0002283168916
+======= curvature
+0.000228325550625
+======= curvature
+0.000228325550625
+======= curvature
+0.000257509516756
+======= curvature
+0.000257509516756
+======= curvature
+0.000257509516756
+======= curvature
+0.000257496233831
+======= curvature
+0.000257496233831
+======= curvature
+0.000257520961529
+======= curvature
+0.000257520961529
+======= curvature
+0.000257520961529
+======= curvature
+0.000257507679458
+======= curvature
+0.000257507679458
+======= curvature
+0.000257532423983
+======= curvature
+0.000257532423983
+======= curvature
+0.000257532423983
+======= curvature
+0.000257519142767
+======= curvature
+0.000257543887019
+======= curvature
+0.000257543887019
+======= curvature
+0.000257543887019
+======= curvature
+0.000257543887019
+======= curvature
+0.000257530606659
+======= curvature
+0.000257555350637
+======= curvature
+0.000257555350637
+======= curvature
+0.000257555350637
+======= curvature
+0.000257555350637
+======= curvature
+0.000257542071131
+======= curvature
+0.000257542071131
+======= curvature
+0.000257566797734
+======= curvature
+0.000257566797734
+======= curvature
+0.000257566797734
+======= curvature
+0.000257553519084
+======= curvature
+0.000257553519084
+======= curvature
+0.000257578262511
+======= curvature
+0.000257578262511
+======= curvature
+0.000257578262511
+======= curvature
+0.00025758973
+======= curvature
+0.00025758973
+======= curvature
+0.00025758973
+======= curvature
+0.00025758973
+======= curvature
+0.000257614474149
+======= curvature
+0.000257601198069
+======= curvature
+0.000257601198069
+======= curvature
+0.000257601198069
+======= curvature
+0.000257601198069
+======= curvature
+0.00025762592484
+======= curvature
+0.000257612649617
+======= curvature
+0.000257612649617
+======= curvature
+0.000257612649617
+======= curvature
+0.000257612649617
+======= curvature
+0.000257612649617
+======= curvature
+0.000257624118845
+======= curvature
+0.000257624118845
+======= curvature
+0.000257624118845
+======= curvature
+0.000257624118845
+======= curvature
+0.000257624118845
+======= curvature
+0.00025761084448
+======= curvature
+0.000257635586518
+======= curvature
+0.000257635586518
+======= curvature
+0.000257635586518
+======= curvature
+0.000257635586518
+======= curvature
+0.000257622313011
+======= curvature
+0.000257622313011
+======= curvature
+0.000257622313011
+======= curvature
+0.00025764705477
+======= curvature
+0.00025764705477
+======= curvature
+0.000257633782121
+======= curvature
+0.000257633782121
+======= curvature
+0.000257633782121
+======= curvature
+0.000257633782121
+======= curvature
+0.000257633782121
+======= curvature
+0.000257620509473
+======= curvature
+0.000257620509473
+======= curvature
+0.000257645249676
+======= curvature
+0.000257645249676
+======= curvature
+0.000257645249676
+======= curvature
+0.000257631977887
+======= curvature
+0.000257631977887
+======= curvature
+0.000257656700711
+======= curvature
+0.000257656700711
+======= curvature
+0.000257656700711
+======= curvature
+0.000257643429781
+======= curvature
+0.00025766816942
+======= curvature
+0.00025766816942
+======= curvature
+0.00025766816942
+======= curvature
+0.00025766816942
+======= curvature
+0.000257654899349
+======= curvature
+0.000257654899349
+======= curvature
+0.000257654899349
+======= curvature
+0.000257679638706
+======= curvature
+0.000257679638706
+======= curvature
+0.000257666369495
+======= curvature
+0.000257666369495
+======= curvature
+0.000257666369495
+======= curvature
+0.000257691108568
+======= curvature
+0.000257691108568
+======= curvature
+0.000257677840217
+======= curvature
+0.000257677840217
+======= curvature
+0.00025770256191
+======= curvature
+0.00025770256191
+======= curvature
+0.00025770256191
+======= curvature
+0.000257689294419
+======= curvature
+0.000257714032923
+======= curvature
+0.000257714032923
+======= curvature
+0.000257714032923
+======= curvature
+0.000257714032923
+======= curvature
+0.000257700766294
+======= curvature
+0.000257725504512
+======= curvature
+0.000257725504512
+======= curvature
+0.000257725504512
+======= curvature
+0.000257725504512
+======= curvature
+0.000257712238744
+======= curvature
+0.000257712238744
+======= curvature
+0.000257736976677
+======= curvature
+0.000257736976677
+======= curvature
+0.000257736976677
+======= curvature
+0.00025772371177
+======= curvature
+0.00025772371177
+======= curvature
+0.00025772371177
+======= curvature
+0.00025772371177
+======= curvature
+0.000257748449416
+======= curvature
+0.000257735185372
+======= curvature
+0.000257735185372
+======= curvature
+0.000257735185372
+======= curvature
+0.000257735185372
+======= curvature
+0.000257735185372
+======= curvature
+0.000257721921327
+======= curvature
+0.000257721921327
+======= curvature
+0.000257746640317
+======= curvature
+0.000257746640317
+======= curvature
+0.000257746640317
+======= curvature
+0.000257733377135
+======= curvature
+0.000257733377135
+======= curvature
+0.000257733377135
+======= curvature
+0.000257733377135
+======= curvature
+0.000257733377135
+======= curvature
+0.000257720113952
+======= curvature
+0.000257720113952
+======= curvature
+0.000257744848476
+======= curvature
+0.000257744848476
+======= curvature
+0.000257744848476
+======= curvature
+0.000257731586156
+======= curvature
+0.000257731586156
+======= curvature
+0.000257731586156
+======= curvature
+0.00025775632039
+======= curvature
+0.00025775632039
+======= curvature
+0.000257743058934
+======= curvature
+0.000257743058934
+======= curvature
+0.000257743058934
+======= curvature
+0.000257767792878
+======= curvature
+0.000257767792878
+======= curvature
+0.000257754532285
+======= curvature
+0.000257754532285
+======= curvature
+0.000257754532285
+======= curvature
+0.000257754532285
+======= curvature
+0.000257779248846
+======= curvature
+0.000257765989117
+======= curvature
+0.000257765989117
+======= curvature
+0.000257765989117
+======= curvature
+0.000257765989117
+======= curvature
+0.000257765989117
+======= curvature
+0.000257752729387
+======= curvature
+0.000257777461477
+======= curvature
+0.000257777461477
+======= curvature
+0.000257777461477
+======= curvature
+0.000257777461477
+======= curvature
+0.000257764202612
+======= curvature
+0.00025778893441
+======= curvature
+0.00025778893441
+======= curvature
+0.00025778893441
+======= curvature
+0.00025778893441
+======= curvature
+0.00025777567641
+======= curvature
+0.000257800407916
+======= curvature
+0.000257800407916
+======= curvature
+0.000257800407916
+======= curvature
+0.000257800407916
+======= curvature
+0.00025778715078
+======= curvature
+0.00025778715078
+======= curvature
+0.000257811881993
+======= curvature
+0.000257811881993
+======= curvature
+0.000257811881993
+======= curvature
+0.000257798625722
+======= curvature
+0.000257798625722
+======= curvature
+0.000257798625722
+======= curvature
+0.000257798625722
+======= curvature
+0.000257798625722
+======= curvature
+0.000257810084144
+======= curvature
+0.000257810084144
+======= curvature
+0.000257810084144
+======= curvature
+0.000257810084144
+======= curvature
+0.000257810084144
+======= curvature
+0.000257796828739
+======= curvature
+0.000257796828739
+======= curvature
+0.000257821558091
+======= curvature
+0.000257821558091
+======= curvature
+0.000257821558091
+======= curvature
+0.000257808303552
+======= curvature
+0.000257808303552
+======= curvature
+0.000257808303552
+======= curvature
+0.000257808303552
+======= curvature
+0.000257808303552
+======= curvature
+0.000257819778935
+======= curvature
+0.000257819778935
+======= curvature
+0.000257819778935
+======= curvature
+0.000257819778935
+======= curvature
+0.000257819778935
+======= curvature
+0.000257806525263
+======= curvature
+0.000257806525263
+======= curvature
+0.000257806525263
+======= curvature
+0.000257806525263
+======= curvature
+0.000257806525263
+======= curvature
+0.00025779327159
+======= curvature
+0.000257817997808
+======= curvature
+0.000257817997808
+======= curvature
+0.000257817997808
+======= curvature
+0.000257817997808
+======= curvature
+0.000257804745002
+======= curvature
+0.000257804745002
+======= curvature
+0.000257804745002
+======= curvature
+0.000257804745002
+======= curvature
+0.000257829453835
+======= curvature
+0.000257816201896
+======= curvature
+0.000257816201896
+======= curvature
+0.000257816201896
+======= curvature
+0.000257816201896
+======= curvature
+0.000257816201896
+======= curvature
+0.000257827676447
+======= curvature
+0.000257827676447
+======= curvature
+0.000257827676447
+======= curvature
+0.000257827676447
+======= curvature
+0.000257827676447
+======= curvature
+0.000257814425375
+======= curvature
+0.000287102233494
+======= curvature
+0.000287129766209
+======= curvature
+0.000287129766209
+======= curvature
+0.000287129766209
+======= curvature
+0.000287116516005
+======= curvature
+0.000287116516005
+======= curvature
+0.000287116516005
+======= curvature
+0.000287116516005
+======= curvature
+0.000287116516005
+======= curvature
+0.000287130799196
+======= curvature
+0.000287130799196
+======= curvature
+0.000287130799196
+======= curvature
+0.000287130799196
+======= curvature
+0.000287130799196
+======= curvature
+0.000287145083065
+======= curvature
+0.000287145083065
+======= curvature
+0.000287145083065
+======= curvature
+0.000287145083065
+======= curvature
+0.000287172596185
+======= curvature
+0.000287159348586
+======= curvature
+0.000287159348586
+======= curvature
+0.000287159348586
+======= curvature
+0.000287159348586
+======= curvature
+0.000287159348586
+======= curvature
+0.000287173633811
+======= curvature
+0.000287173633811
+======= curvature
+0.000287173633811
+======= curvature
+0.000287173633811
+======= curvature
+0.000287173633811
+======= curvature
+0.000287160387082
+======= curvature
+0.000287160387082
+======= curvature
+0.000287160387082
+======= curvature
+0.000287187917575
+======= curvature
+0.000287187917575
+======= curvature
+0.000287174671715
+======= curvature
+0.000287174671715
+======= curvature
+0.000287174671715
+======= curvature
+0.000287174671715
+======= curvature
+0.000287174671715
+======= curvature
+0.000287161425855
+======= curvature
+0.000287161425855
+======= curvature
+0.000287188954886
+======= curvature
+0.000287188954886
+======= curvature
+0.000287188954886
+======= curvature
+0.000287175709896
+======= curvature
+0.000287175709896
+======= curvature
+0.000287175709896
+======= curvature
+0.000287175709896
+======= curvature
+0.000287175709896
+======= curvature
+0.000287189975588
+======= curvature
+0.000287189975588
+======= curvature
+0.000287189975588
+======= curvature
+0.000287189975588
+======= curvature
+0.000287189975588
+======= curvature
+0.000287176731468
+======= curvature
+0.000287176731468
+======= curvature
+0.000287176731468
+======= curvature
+0.000287176731468
+======= curvature
+0.000287176731468
+======= curvature
+0.000287191015591
+======= curvature
+0.000287191015591
+======= curvature
+0.000287191015591
+======= curvature
+0.000287191015591
+======= curvature
+0.000287191015591
+======= curvature
+0.000287177772342
+======= curvature
+0.000287177772342
+======= curvature
+0.000287177772342
+======= curvature
+0.000287177772342
+======= curvature
+0.000287177772342
+======= curvature
+0.000287164529092
+======= curvature
+0.000287164529092
+======= curvature
+0.000287164529092
+======= curvature
+0.000287164529092
+======= curvature
+0.000287192053731
+======= curvature
+0.000287178811353
+======= curvature
+0.000287178811353
+======= curvature
+0.000287178811353
+======= curvature
+0.000287178811353
+======= curvature
+0.000287206335796
+======= curvature
+0.000287193094289
+======= curvature
+0.000287193094289
+======= curvature
+0.000287193094289
+======= curvature
+0.000287193094289
+======= curvature
+0.000287193094289
+======= curvature
+0.0002872073779
+======= curvature
+0.0002872073779
+======= curvature
+0.0002872073779
+======= curvature
+0.0002872073779
+======= curvature
+0.0002872073779
+======= curvature
+0.000287194137265
+======= curvature
+0.000287194137265
+======= curvature
+0.000287194137265
+======= curvature
+0.000287221641024
+======= curvature
+0.000287221641024
+======= curvature
+0.000287208401261
+======= curvature
+0.000287208401261
+======= curvature
+0.000287208401261
+======= curvature
+0.000287208401261
+======= curvature
+0.000287208401261
+======= curvature
+0.000287195161497
+======= curvature
+0.000287195161497
+======= curvature
+0.000287195161497
+======= curvature
+0.000287222682809
+======= curvature
+0.000287222682809
+======= curvature
+0.000287209443918
+======= curvature
+0.000287209443918
+======= curvature
+0.000287209443918
+======= curvature
+0.000287209443918
+======= curvature
+0.000287209443918
+======= curvature
+0.000287196205027
+======= curvature
+0.000287196205027
+======= curvature
+0.000287196205027
+======= curvature
+0.000287196205027
+======= curvature
+0.000287196205027
+======= curvature
+0.000287182966136
+======= curvature
+0.000287182966136
+======= curvature
+0.000287182966136
+======= curvature
+0.000287182966136
+======= curvature
+0.000287182966136
+======= curvature
+0.000287197246694
+======= curvature
+0.000287197246694
+======= curvature
+0.000287197246694
+======= curvature
+0.000287197246694
+======= curvature
+0.000287197246694
+======= curvature
+0.000287184008676
+======= curvature
+0.000287184008676
+======= curvature
+0.000287184008676
+======= curvature
+0.000287184008676
+======= curvature
+0.000287184008676
+======= curvature
+0.000287170770658
+======= curvature
+0.000287170770658
+======= curvature
+0.000287170770658
+======= curvature
+0.000287170770658
+======= curvature
+0.000287170770658
+======= curvature
+0.00028715753264
+======= curvature
+0.00028715753264
+======= curvature
+0.00028715753264
+======= curvature
+0.00028715753264
+======= curvature
+0.00028715753264
+======= curvature
+0.000287144294622
+======= curvature
+0.000287144294622
+======= curvature
+0.000287171807924
+======= curvature
+0.000287171807924
+======= curvature
+0.000287171807924
+======= curvature
+0.000287158570779
+======= curvature
+0.000287158570779
+======= curvature
+0.000287158570779
+======= curvature
+0.000287158570779
+======= curvature
+0.000287186064865
+======= curvature
+0.000287172828593
+======= curvature
+0.000287172828593
+======= curvature
+0.000287172828593
+======= curvature
+0.000287172828593
+======= curvature
+0.000287172828593
+======= curvature
+0.000287159592322
+======= curvature
+0.000287159592322
+======= curvature
+0.000287159592322
+======= curvature
+0.000287159592322
+======= curvature
+0.000287187103951
+======= curvature
+0.000287173868553
+======= curvature
+0.000287173868553
+======= curvature
+0.000287173868553
+======= curvature
+0.000287173868553
+======= curvature
+0.000287173868553
+======= curvature
+0.000287160633156
+======= curvature
+0.000287160633156
+======= curvature
+0.000287160633156
+======= curvature
+0.000287160633156
+======= curvature
+0.000287188143314
+======= curvature
+0.000287174908791
+======= curvature
+0.000287174908791
+======= curvature
+0.000287174908791
+======= curvature
+0.000287174908791
+======= curvature
+0.000287174908791
+======= curvature
+0.000287161674268
+======= curvature
+0.000287161674268
+======= curvature
+0.000287189182955
+======= curvature
+0.000287189182955
+======= curvature
+0.000287189182955
+======= curvature
+0.000287175949306
+======= curvature
+0.000287175949306
+======= curvature
+0.000287203457789
+======= curvature
+0.000287203457789
+======= curvature
+0.000287203457789
+======= curvature
+0.000287190225016
+======= curvature
+0.000287190225016
+======= curvature
+0.000287190225016
+======= curvature
+0.000287217714282
+======= curvature
+0.000287217714282
+======= curvature
+0.000287204482383
+======= curvature
+0.000287204482383
+======= curvature
+0.000287204482383
+======= curvature
+0.000287204482383
+======= curvature
+0.000287231990454
+======= curvature
+0.000287218759431
+======= curvature
+0.000287218759431
+======= curvature
+0.000287218759431
+======= curvature
+0.000287218759431
+======= curvature
+0.000287218759431
+======= curvature
+0.000287205528408
+======= curvature
+0.000287205528408
+======= curvature
+0.000287233035005
+======= curvature
+0.000287233035005
+======= curvature
+0.000287233035005
+======= curvature
+0.000287219804858
+======= curvature
+0.000287219804858
+======= curvature
+0.000287219804858
+======= curvature
+0.000287219804858
+======= curvature
+0.000287219804858
+======= curvature
+0.000287234081977
+======= curvature
+0.000287234081977
+======= curvature
+0.000287234081977
+======= curvature
+0.000287234081977
+======= curvature
+0.000287234081977
+======= curvature
+0.000287248340753
+======= curvature
+0.000287248340753
+======= curvature
+0.000287248340753
+======= curvature
+0.000287248340753
+======= curvature
+0.000287248340753
+======= curvature
+0.000287262619207
+======= curvature
+0.000287262619207
+======= curvature
+0.000287262619207
+======= curvature
+0.000287262619207
+======= curvature
+0.000287262619207
+======= curvature
+0.00028724939169
+======= curvature
+0.000287276896184
+======= curvature
+0.000287276896184
+======= curvature
+0.000287276896184
+======= curvature
+0.000287276896184
+======= curvature
+0.000287263669545
+======= curvature
+0.000287263669545
+======= curvature
+0.000287263669545
+======= curvature
+0.000287291173827
+======= curvature
+0.000287291173827
+======= curvature
+0.000287277948066
+======= curvature
+0.000287277948066
+======= curvature
+0.000287277948066
+======= curvature
+0.000287277948066
+======= curvature
+0.000287277948066
+======= curvature
+0.000287264722305
+======= curvature
+0.000287264722305
+======= curvature
+0.000287264722305
+======= curvature
+0.000287264722305
+======= curvature
+0.000287292206102
+======= curvature
+0.000287278981219
+======= curvature
+0.000287278981219
+======= curvature
+0.000287278981219
+======= curvature
+0.000287278981219
+======= curvature
+0.000287278981219
+======= curvature
+0.000287265756336
+======= curvature
+0.000287265756336
+======= curvature
+0.000287265756336
+======= curvature
+0.000287265756336
+======= curvature
+0.000287265756336
+======= curvature
+0.000287252531453
+======= curvature
+0.000287280031512
+======= curvature
+0.000287280031512
+======= curvature
+0.000287280031512
+======= curvature
+0.000287280031512
+======= curvature
+0.000287266807507
+======= curvature
+0.000287266807507
+======= curvature
+0.000287266807507
+======= curvature
+0.000287266807507
+======= curvature
+0.000287266807507
+======= curvature
+0.000287281084227
+======= curvature
+0.000287281084227
+======= curvature
+0.000287281084227
+======= curvature
+0.000287281084227
+======= curvature
+0.000287281084227
+======= curvature
+0.000287267861101
+======= curvature
+0.000287267861101
+======= curvature
+0.000287267861101
+======= curvature
+0.000287267861101
+======= curvature
+0.000287267861101
+======= curvature
+0.000287254637976
+======= curvature
+0.000287254637976
+======= curvature
+0.000287282135075
+======= curvature
+0.000287282135075
+======= curvature
+0.000287282135075
+======= curvature
+0.000287268912829
+======= curvature
+0.000287268912829
+======= curvature
+0.000287268912829
+======= curvature
+0.000287268912829
+======= curvature
+0.000287268912829
+======= curvature
+0.000287255690583
+======= curvature
+0.000287255690583
+======= curvature
+0.000287255690583
+======= curvature
+0.000287255690583
+======= curvature
+0.000287255690583
+======= curvature
+0.000287242468338
+======= curvature
+0.000287242468338
+======= curvature
+0.000287242468338
+======= curvature
+0.000287242468338
+======= curvature
+0.000316623006445
+======= curvature
+0.000316640091686
+======= curvature
+0.000316640091686
+======= curvature
+0.000316640091686
+======= curvature
+0.000316640091686
+======= curvature
+0.000316640091686
+======= curvature
+0.00031662687032
+======= curvature
+0.00031662687032
+======= curvature
+0.00031662687032
+======= curvature
+0.00031662687032
+======= curvature
+0.000316657154609
+======= curvature
+0.000316643934123
+======= curvature
+0.000316643934123
+======= curvature
+0.000316643934123
+======= curvature
+0.000316643934123
+======= curvature
+0.000316643934123
+======= curvature
+0.000316661019639
+======= curvature
+0.000316661019639
+======= curvature
+0.000316661019639
+======= curvature
+0.000316661019639
+======= curvature
+0.000316661019639
+======= curvature
+0.000316647800033
+======= curvature
+0.000316647800033
+======= curvature
+0.00031667810378
+======= curvature
+0.00031667810378
+======= curvature
+0.00031667810378
+======= curvature
+0.000316664885054
+======= curvature
+0.000316664885054
+======= curvature
+0.000316664885054
+======= curvature
+0.000316664885054
+======= curvature
+0.000316664885054
+======= curvature
+0.000316651666329
+======= curvature
+0.000316681968699
+======= curvature
+0.000316681968699
+======= curvature
+0.000316681968699
+======= curvature
+0.000316681968699
+======= curvature
+0.000316668750855
+======= curvature
+0.000316668750855
+======= curvature
+0.000316668750855
+======= curvature
+0.000316668750855
+======= curvature
+0.000316668750855
+======= curvature
+0.000316655533011
+======= curvature
+0.000316655533011
+======= curvature
+0.000316655533011
+======= curvature
+0.000316655533011
+======= curvature
+0.000316655533011
+======= curvature
+0.000316642315167
+======= curvature
+0.000316642315167
+======= curvature
+0.000316642315167
+======= curvature
+0.000316642315167
+======= curvature
+0.000316672593955
+======= curvature
+0.000316659376992
+======= curvature
+0.000316659376992
+======= curvature
+0.000316659376992
+======= curvature
+0.000316659376992
+======= curvature
+0.000316659376992
+======= curvature
+0.000316646160029
+======= curvature
+0.000316646160029
+======= curvature
+0.000316646160029
+======= curvature
+0.000316646160029
+======= curvature
+0.000316646160029
+======= curvature
+0.000316632943066
+======= curvature
+0.000316632943066
+======= curvature
+0.000316632943066
+======= curvature
+0.000316632943066
+======= curvature
+0.000316632943066
+======= curvature
+0.000316619726103
+======= curvature
+0.000316619726103
+======= curvature
+0.000316619726103
+======= curvature
+0.000316619726103
+======= curvature
+0.000316619726103
+======= curvature
+0.00031660650914
+======= curvature
+0.000316636803695
+======= curvature
+0.000316636803695
+======= curvature
+0.000316636803695
+======= curvature
+0.000316636803695
+======= curvature
+0.000316623587614
+======= curvature
+0.000316623587614
+======= curvature
+0.000316623587614
+======= curvature
+0.000316623587614
+======= curvature
+0.000316623587614
+======= curvature
+0.000316610371533
+======= curvature
+0.000316610371533
+======= curvature
+0.000316610371533
+======= curvature
+0.000316610371533
+======= curvature
+0.000316610371533
+======= curvature
+0.000316597155452
+======= curvature
+0.000316597155452
+======= curvature
+0.000316597155452
+======= curvature
+0.000316597155452
+======= curvature
+0.000316597155452
+======= curvature
+0.000316583939371
+======= curvature
+0.000316583939371
+======= curvature
+0.000316583939371
+======= curvature
+0.000316583939371
+======= curvature
+0.000316583939371
+======= curvature
+0.00031657072329
+======= curvature
+0.00031657072329
+======= curvature
+0.00031657072329
+======= curvature
+0.00031657072329
+======= curvature
+0.00031657072329
+======= curvature
+0.000316557507209
+======= curvature
+0.000316557507209
+======= curvature
+0.000316557507209
+======= curvature
+0.000316557507209
+======= curvature
+0.000316557507209
+======= curvature
+0.000316544291128
+======= curvature
+0.000316544291128
+======= curvature
+0.000316544291128
+======= curvature
+0.000316544291128
+======= curvature
+0.000316544291128
+======= curvature
+0.000316531075047
+======= curvature
+0.000316531075047
+======= curvature
+0.000316531075047
+======= curvature
+0.000316531075047
+======= curvature
+0.000316531075047
+======= curvature
+0.000316517858966
+======= curvature
+0.000316517858966
+======= curvature
+0.00031654814329
+======= curvature
+0.00031654814329
+======= curvature
+0.00031654814329
+======= curvature
+0.000316534928091
+======= curvature
+0.000316534928091
+======= curvature
+0.000316534928091
+======= curvature
+0.000316534928091
+======= curvature
+0.000316534928091
+======= curvature
+0.000316521712893
+======= curvature
+0.000316551995837
+======= curvature
+0.000316551995837
+======= curvature
+0.000316551995837
+======= curvature
+0.000316551995837
+======= curvature
+0.000316538781521
+======= curvature
+0.000316538781521
+======= curvature
+0.000316538781521
+======= curvature
+0.000316538781521
+======= curvature
+0.000316538781521
+======= curvature
+0.000316525567205
+======= curvature
+0.000316525567205
+======= curvature
+0.000316555848768
+======= curvature
+0.000316555848768
+======= curvature
+0.000316555848768
+======= curvature
+0.000316542635335
+======= curvature
+0.000316542635335
+======= curvature
+0.000316542635335
+======= curvature
+0.000316542635335
+======= curvature
+0.000316542635335
+======= curvature
+0.000316529421902
+======= curvature
+0.000316529421902
+======= curvature
+0.000316529421902
+======= curvature
+0.000316529421902
+======= curvature
+0.000316529421902
+======= curvature
+0.000316516208469
+======= curvature
+0.000316516208469
+======= curvature
+0.000316516208469
+======= curvature
+0.000316546466461
+======= curvature
+0.000316546466461
+======= curvature
+0.000316533253911
+======= curvature
+0.000316533253911
+======= curvature
+0.000316533253911
+======= curvature
+0.000316533253911
+======= curvature
+0.000316533253911
+======= curvature
+0.00031652004136
+======= curvature
+0.00031652004136
+======= curvature
+0.00031652004136
+======= curvature
+0.00031652004136
+======= curvature
+0.00031652004136
+======= curvature
+0.00031650682881
+======= curvature
+0.00031650682881
+======= curvature
+0.00031650682881
+======= curvature
+0.00031653710508
+======= curvature
+0.00031653710508
+======= curvature
+0.000316523893414
+======= curvature
+0.000316523893414
+======= curvature
+0.000316523893414
+======= curvature
+0.000316523893414
+======= curvature
+0.000316554169564
+======= curvature
+0.000316540958782
+======= curvature
+0.000316540958782
+======= curvature
+0.000316540958782
+======= curvature
+0.000316540958782
+======= curvature
+0.000316540958782
+======= curvature
+0.000316558024914
+======= curvature
+0.000316558024914
+======= curvature
+0.000316558024914
+======= curvature
+0.000316558024914
+======= curvature
+0.000316558024914
+======= curvature
+0.000316544815016
+======= curvature
+0.000316544815016
+======= curvature
+0.000316575068739
+======= curvature
+0.000316575068739
+======= curvature
+0.000316575068739
+======= curvature
+0.000316561859725
+======= curvature
+0.000316561859725
+======= curvature
+0.000316561859725
+======= curvature
+0.000316561859725
+======= curvature
+0.000316561859725
+======= curvature
+0.000316578926118
+======= curvature
+0.000316578926118
+======= curvature
+0.000316578926118
+======= curvature
+0.000316578926118
+======= curvature
+0.000316578926118
+======= curvature
+0.00031656571799
+======= curvature
+0.00031656571799
+======= curvature
+0.00031656571799
+======= curvature
+0.00031656571799
+======= curvature
+0.00031656571799
+======= curvature
+0.000316552509862
+======= curvature
+0.000316582781734
+======= curvature
+0.000316582781734
+======= curvature
+0.000316582781734
+======= curvature
+0.000316582781734
+======= curvature
+0.000316569574491
+======= curvature
+0.000316569574491
+======= curvature
+0.000316569574491
+======= curvature
+0.000316569574491
+======= curvature
+0.000316569574491
+======= curvature
+0.000316556367249
+======= curvature
+0.000316556367249
+======= curvature
+0.000316556367249
+======= curvature
+0.000316556367249
+======= curvature
+0.000316556367249
+======= curvature
+0.000316543160006
+======= curvature
+0.000316543160006
+======= curvature
+0.000316543160006
+======= curvature
+0.000316543160006
+======= curvature
+0.000316573429228
+======= curvature
+0.000316560222871
+======= curvature
+0.000316560222871
+======= curvature
+0.000316560222871
+======= curvature
+0.000316560222871
+======= curvature
+0.000316560222871
+======= curvature
+0.000316547016514
+======= curvature
+0.000316547016514
+======= curvature
+0.000316547016514
+======= curvature
+0.000316547016514
+======= curvature
+0.000316547016514
+======= curvature
+0.000316533810158
+======= curvature
+0.000316533810158
+======= curvature
+0.000316533810158
+======= curvature
+0.000316533810158
+======= curvature
+0.000316533810158
+======= curvature
+0.000316520603801
+======= curvature
+0.000316520603801
+======= curvature
+0.000316520603801
+======= curvature
+0.000316520603801
+======= curvature
+0.000316520603801
+======= curvature
+0.000316507397444
+======= curvature
+0.000316507397444
+======= curvature
+0.000316507397444
+======= curvature
+0.000316507397444
+======= curvature
+0.000316507397444
+======= curvature
+0.000316524456019
+======= curvature
+0.000316524456019
+======= curvature
+0.000316524456019
+======= curvature
+0.000316524456019
+======= curvature
+0.000316524456019
+======= curvature
+0.000316511250549
+======= curvature
+0.000316511250549
+======= curvature
+0.000316511250549
+======= curvature
+0.000316511250549
+======= curvature
+0.000316511250549
+======= curvature
+0.000316498045078
+======= curvature
+0.000316498045078
+======= curvature
+0.000316498045078
+======= curvature
+0.000316498045078
+======= curvature
+0.000316498045078
+======= curvature
+0.000316484839608
+======= curvature
+0.000316484839608
+======= curvature
+0.000316484839608
+======= curvature
+0.000316484839608
+======= curvature
+0.000316484839608
+======= curvature
+0.000316471634137
+======= curvature
+0.000316471634137
+======= curvature
+0.000316471634137
+======= curvature
+0.000316471634137
+======= curvature
+0.000316471634137
+======= curvature
+0.000316458428667
+======= curvature
+0.000316458428667
+======= curvature
+0.000316458428667
+======= curvature
+0.000316458428667
+======= curvature
+0.000316458428667
+======= curvature
+0.000316445223197
+======= curvature
+0.000316445223197
+======= curvature
+0.000316445223197
+======= curvature
+0.000316445223197
+======= curvature
+0.000316445223197
+======= curvature
+0.000316432017726
+======= curvature
+0.000316432017726
+======= curvature
+0.000316432017726
+======= curvature
+0.000316432017726
+======= curvature
+0.000316432017726
+======= curvature
+0.000316418812256
+======= curvature
+0.000316418812256
+======= curvature
+0.000316418812256
+======= curvature
+0.000316418812256
+======= curvature
+0.000316418812256
+======= curvature
+0.000316405606785
+======= curvature
+0.000316405606785
+======= curvature
+0.000316405606785
+======= curvature
+0.000316405606785
+======= curvature
+0.000316405606785
+======= curvature
+0.000316392401315
+======= curvature
+0.000316392401315
+======= curvature
+0.000316392401315
+======= curvature
+0.000316392401315
+======= curvature
+0.000316392401315
+======= curvature
+0.000316379195844
+======= curvature
+0.000316379195844
+======= curvature
+0.00031634894695
+======= curvature
+0.00031634894695
+======= curvature
+0.00031634894695
+======= curvature
+0.000316365990374
+======= curvature
+0.000316365990374
+======= curvature
+0.000316365990374
+======= curvature
+0.000316365990374
+======= curvature
+0.000316365990374
+======= curvature
+0.000316352784904
+======= curvature
+0.000316352784904
+======= curvature
+0.000316352784904
+======= curvature
+0.000316352784904
+======= curvature
+0.000316383011505
+======= curvature
+0.00031636980692
+======= curvature
+0.00031636980692
+======= curvature
+0.00031636980692
+======= curvature
+0.00031636980692
+======= curvature
+0.00031636980692
+======= curvature
+0.000316356602336
+======= curvature
+0.000316356602336
+======= curvature
+0.00031638684845
+======= curvature
+0.00031638684845
+======= curvature
+0.00031638684845
+======= curvature
+0.000316373644752
+======= curvature
+0.000316373644752
+======= curvature
+0.000316373644752
+======= curvature
+0.000316373644752
+======= curvature
+0.000316373644752
+======= curvature
+0.000316360441055
+======= curvature
+0.000316360441055
+======= curvature
+0.000316360441055
+======= curvature
+0.000316390685778
+======= curvature
+0.000316390685778
+======= curvature
+0.000316377482968
+======= curvature
+0.000316377482968
+======= curvature
+0.000316377482968
+======= curvature
+0.000316377482968
+======= curvature
+0.000316377482968
+======= curvature
+0.000316364280158
+======= curvature
+0.000316364280158
+======= curvature
+0.000316364280158
+======= curvature
+0.000316364280158
+======= curvature
+0.000316364280158
+======= curvature
+0.000316381321567
+======= curvature
+0.000316381321567
+======= curvature
+0.000316381321567
+======= curvature
+0.000316381321567
+======= curvature
+0.000316381321567
+======= curvature
+0.000316368119645
+======= curvature
+0.000316368119645
+======= curvature
+0.000316368119645
+======= curvature
+0.000316368119645
+======= curvature
+0.000316368119645
+======= curvature
+0.000316354917722
+======= curvature
+0.000316354917722
+======= curvature
+0.000316354917722
+======= curvature
+0.000316354917722
+======= curvature
+0.000316354917722
+======= curvature
+0.0003163417158
+======= curvature
+0.0003163417158
+======= curvature
+0.0003163417158
+======= curvature
+0.0003163417158
+======= curvature
+0.000316371934316
+======= curvature
+0.000316358733281
+======= curvature
+0.000316358733281
+======= curvature
+0.000316358733281
+======= curvature
+0.000316358733281
+======= curvature
+0.000316358733281
+======= curvature
+0.000316345532247
+======= curvature
+0.000316345532247
+======= curvature
+0.000316345532247
+======= curvature
+0.000316345532247
+======= curvature
+0.000316345532247
+======= curvature
+0.000316332331212
+======= curvature
+0.000316332331212
+======= curvature
+0.000316332331212
+======= curvature
+0.000316332331212
+======= curvature
+0.000316332331212
+======= curvature
+0.000316319130177
+======= curvature
+0.000316319130177
+======= curvature
+0.000316319130177
+======= curvature
+0.000316319130177
+======= curvature
+0.000316319130177
+======= curvature
+0.000316305929143
+======= curvature
+0.000316305929143
+======= curvature
+0.000316305929143
+======= curvature
+0.000316305929143
+======= curvature
+0.000316305929143
+======= curvature
+0.000316292728108
+======= curvature
+0.000316292728108
+======= curvature
+0.000316322961081
+======= curvature
+0.000316322961081
+======= curvature
+0.000316322961081
+======= curvature
+0.000316309760934
+======= curvature
+0.000316309760934
+======= curvature
+0.000316309760934
+======= curvature
+0.000316339993774
+======= curvature
+0.000316339993774
+======= curvature
+0.000316326794517
+======= curvature
+0.000316326794517
+======= curvature
+0.000316326794517
+======= curvature
+0.000316357027222
+======= curvature
+0.000316357027222
+======= curvature
+0.000316343828854
+======= curvature
+0.000316343828854
+======= curvature
+0.000316343828854
+======= curvature
+0.000316343828854
+======= curvature
+0.000316343828854
+======= curvature
+0.000316330630486
+======= curvature
+0.000316360861795
+======= curvature
+0.000316360861795
+======= curvature
+0.000316360861795
+======= curvature
+0.000316360861795
+======= curvature
+0.000316347664317
+======= curvature
+0.000316347664317
+======= curvature
+0.000316347664317
+======= curvature
+0.000316347664317
+======= curvature
+0.000316347664317
+======= curvature
+0.000316334466839
+======= curvature
+0.000316334466839
+======= curvature
+0.000316334466839
+======= curvature
+0.000316364675859
+======= curvature
+0.000316364675859
+======= curvature
+0.00031635147927
+======= curvature
+0.00031635147927
+======= curvature
+0.00031635147927
+======= curvature
+0.00031635147927
+======= curvature
+0.00031635147927
+======= curvature
+0.000316338282681
+======= curvature
+0.000316338282681
+======= curvature
+0.000316338282681
+======= curvature
+0.000316338282681
+======= curvature
+0.000316338282681
+======= curvature
+0.000316325086092
+======= curvature
+0.000316325086092
+======= curvature
+0.000316325086092
+======= curvature
+0.000316325086092
+======= curvature
+0.000316325086092
+======= curvature
+0.000316311889503
+======= curvature
+0.000316311889503
+======= curvature
+0.000316342115495
+======= curvature
+0.000316342115495
+======= curvature
+0.000316342115495
+======= curvature
+0.000316328919796
+======= curvature
+0.000316328919796
+======= curvature
+0.000316328919796
+======= curvature
+0.000316328919796
+======= curvature
+0.000316328919796
+======= curvature
+0.000316315724098
+======= curvature
+0.000316315724098
+======= curvature
+0.000316315724098
+======= curvature
+0.000316315724098
+======= curvature
+0.000316315724098
+======= curvature
+0.000316302528399
+======= curvature
+0.000316302528399
+======= curvature
+0.000316302528399
+======= curvature
+0.000316302528399
+======= curvature
+0.000316302528399
+======= curvature
+0.0003162893327
+======= curvature
+0.0003162893327
+======= curvature
+0.0003162893327
+======= curvature
+0.0003162893327
+======= curvature
+0.0003162893327
+======= curvature
+0.000316276137001
+======= curvature
+0.000316276137001
+======= curvature
+0.000316276137001
+======= curvature
+0.000316276137001
+======= curvature
+0.000316276137001
+======= curvature
+0.000316262941303
+======= curvature
+0.000316262941303
+======= curvature
+0.000316262941303
+======= curvature
+0.000316262941303
+======= curvature
+0.000316262941303
+======= curvature
+0.000316249745604
+======= curvature
+0.000316249745604
+======= curvature
+0.000316249745604
+======= curvature
+0.000316249745604
+======= curvature
+0.000316249745604
+======= curvature
+0.000316236549905
+======= curvature
+0.000316236549905
+======= curvature
+0.000316236549905
+======= curvature
+0.000316236549905
+======= curvature
+0.000316236549905
+======= curvature
+0.000316223354206
+======= curvature
+0.000316223354206
+======= curvature
+0.000316223354206
+======= curvature
+0.000316223354206
+======= curvature
+0.000316223354206
+======= curvature
+0.000316210158508
+======= curvature
+0.000316210158508
+======= curvature
+0.000316210158508
+======= curvature
+0.000316210158508
+======= curvature
+0.000316210158508
+======= curvature
+0.000316196962809
+======= curvature
+0.000316196962809
+======= curvature
+0.000316196962809
+======= curvature
+0.000316196962809
+======= curvature
+0.000316166750686
+======= curvature
+0.000316153554097
+======= curvature
+0.000316153554097
+======= curvature
+0.000316153554097
+======= curvature
+0.000316183764959
+======= curvature
+0.000316183764959
+======= curvature
+0.00031617056926
+======= curvature
+0.00031617056926
+======= curvature
+0.00031617056926
+======= curvature
+0.00031617056926
+======= curvature
+0.00031617056926
+======= curvature
+0.000316157373561
+======= curvature
+0.000316157373561
+======= curvature
+0.000316157373561
+======= curvature
+0.000316157373561
+======= curvature
+0.000316157373561
+======= curvature
+0.000316144177862
+======= curvature
+0.000316144177862
+======= curvature
+0.000316144177862
+======= curvature
+0.000316144177862
+======= curvature
+0.000316144177862
+======= curvature
+0.000316130982164
+======= curvature
+0.000316130982164
+======= curvature
+0.000316130982164
+======= curvature
+0.000316130982164
+======= curvature
+0.000316130982164
+======= curvature
+0.000316117786465
+======= curvature
+0.000316117786465
+======= curvature
+0.000316147992145
+======= curvature
+0.000316147992145
+======= curvature
+0.000316147992145
+======= curvature
+0.000316134797337
+======= curvature
+0.000316134797337
+======= curvature
+0.000316134797337
+======= curvature
+0.000316134797337
+======= curvature
+0.000316134797337
+======= curvature
+0.000316121602529
+======= curvature
+0.000316121602529
+======= curvature
+0.000316121602529
+======= curvature
+0.000316121602529
+======= curvature
+0.000316121602529
+======= curvature
+0.000316108407721
+======= curvature
+0.000316108407721
+======= curvature
+0.000316108407721
+======= curvature
+0.000316108407721
+======= curvature
+0.000316108407721
+======= curvature
+0.000316095212913
+======= curvature
+0.000316095212913
+======= curvature
+0.000316095212913
+======= curvature
+0.000316095212913
+======= curvature
+0.000316095212913
+======= curvature
+0.000316082018105
+======= curvature
+0.000316082018105
+======= curvature
+0.000316082018105
+======= curvature
+0.000316082018105
+======= curvature
+0.000316082018105
+======= curvature
+0.000316068823297
+======= curvature
+0.000316068823297
+======= curvature
+0.000316068823297
+======= curvature
+0.000316068823297
+======= curvature
+0.000316068823297
+======= curvature
+0.000316055628489
+======= curvature
+0.000316055628489
+======= curvature
+0.000316055628489
+======= curvature
+0.000316055628489
+======= curvature
+0.000316055628489
+======= curvature
+0.000316042433681
+======= curvature
+0.000316042433681
+======= curvature
+0.000316042433681
+======= curvature
+0.000316042433681
+======= curvature
+0.000316042433681
+======= curvature
+0.000316029238873
+======= curvature
+0.000316029238873
+======= curvature
+0.000316029238873
+======= curvature
+0.000316029238873
+======= curvature
+0.000316029238873
+======= curvature
+0.000316016044064
+======= curvature
+0.000316016044064
+======= curvature
+0.000316016044064
+======= curvature
+0.000316016044064
+======= curvature
+0.000316016044064
+======= curvature
+0.000316002849256
+======= curvature
+0.000316002849256
+======= curvature
+0.000316002849256
+======= curvature
+0.000316002849256
+======= curvature
+0.000316002849256
+======= curvature
+0.000315989654448
+======= curvature
+0.000315989654448
+======= curvature
+0.000315989654448
+======= curvature
+0.000315989654448
+======= curvature
+0.000315989654448
+======= curvature
+0.00031597645964
+======= curvature
+0.00031597645964
+======= curvature
+0.00031597645964
+======= curvature
+0.00031597645964
+======= curvature
+0.00031597645964
+======= curvature
+0.000315963264832
+======= curvature
+0.000315963264832
+======= curvature
+0.000315963264832
+======= curvature
+0.000315963264832
+======= curvature
+0.000315963264832
+======= curvature
+0.000315950070024
+======= curvature
+0.000315950070024
+======= curvature
+0.000315950070024
+======= curvature
+0.000315950070024
+======= curvature
+0.000315950070024
+======= curvature
+0.000315936875216
+======= curvature
+0.000315936875216
+======= curvature
+0.000315936875216
+======= curvature
+0.000315936875216
+======= curvature
+0.000315936875216
+======= curvature
+0.000315923680408
+======= curvature
+0.000315923680408
+======= curvature
+0.000315923680408
+======= curvature
+0.000315923680408
+======= curvature
+0.000315923680408
+======= curvature
+0.0003159104856
+======= curvature
+0.0003159104856
+======= curvature
+0.0003159104856
+======= curvature
+0.000315880302612
+======= curvature
+0.000315880302612
+======= curvature
+0.000315867106913
+======= curvature
+0.000315867106913
+======= curvature
+0.000315867106913
+======= curvature
+0.000315867106913
+======= curvature
+0.000315867106913
+======= curvature
+0.000315884093832
+======= curvature
+0.000315884093832
+======= curvature
+0.000345351847695
+======= curvature
+0.000345318851795
+======= curvature
+0.000345318851795
+======= curvature
+0.000345305656096
+======= curvature
+0.000345305656096
+======= curvature
+0.000345305656096
+======= curvature
+0.000345338650735
+======= curvature
+0.000345338650735
+======= curvature
+0.000345325455927
+======= curvature
+0.000345325455927
+======= curvature
+0.000345325455927
+======= curvature
+0.000345325455927
+======= curvature
+0.000345325455927
+======= curvature
+0.000345312261119
+======= curvature
+0.000345312261119
+======= curvature
+0.000345345254461
+======= curvature
+0.000345345254461
+======= curvature
+0.000345345254461
+======= curvature
+0.000345332060544
+======= curvature
+0.000345332060544
+======= curvature
+0.000345332060544
+======= curvature
+0.000345332060544
+======= curvature
+0.000345332060544
+======= curvature
+0.000345318866627
+======= curvature
+0.000345351835872
+======= curvature
+0.000345351835872
+======= curvature
+0.000345351835872
+======= curvature
+0.000345351835872
+======= curvature
+0.000345338642845
+======= curvature
+0.000345338642845
+======= curvature
+0.000345338642845
+======= curvature
+0.000345338642845
+======= curvature
+0.000345338642845
+======= curvature
+0.000345358442717
+======= curvature
+0.000345358442717
+======= curvature
+0.000345358442717
+======= curvature
+0.000345358442717
+======= curvature
+0.000345358442717
+======= curvature
+0.000345345250583
+======= curvature
+0.000345345250583
+======= curvature
+0.000345345250583
+======= curvature
+0.000345345250583
+======= curvature
+0.000345345250583
+======= curvature
+0.000345332058448
+======= curvature
+0.000345365047895
+======= curvature
+0.000345365047895
+======= curvature
+0.000345365047895
+======= curvature
+0.000345365047895
+======= curvature
+0.000345351856653
+======= curvature
+0.000345351856653
+======= curvature
+0.000345351856653
+======= curvature
+0.000345351856653
+======= curvature
+0.000345351856653
+======= curvature
+0.000345338665411
+======= curvature
+0.000345338665411
+======= curvature
+0.000345338665411
+======= curvature
+0.000345338665411
+======= curvature
+0.000345338665411
+======= curvature
+0.000345325474168
+======= curvature
+0.000345325474168
+======= curvature
+0.000345325474168
+======= curvature
+0.000345325474168
+======= curvature
+0.000345325474168
+CAN INVALID
+{'event': 'alert_add', 'alert_type': 'controlsFailed', 'enabled': True}
+======= curvature
+0.000345312282926
+DISABLING IMMEDIATELY ON ALERT
+=================
+Take Control Immediately/Controls Failed 5  steerRequired chimeRepeated
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+======= curvature
+0.000345312282926
+]0;uva-dsa@uvadsa0: ~/Development/openpilot_dev/openpilot0.3.5[01;32muva-dsa@uvadsa0[00m:[01;34m~/Development/openpilot_dev/openpilot0.3.5[00m$ ./run_docker_tests.sh exit[K
+exit
+
+Script done on Wed 20 Sep 2017 03:53:27 PM EDT
